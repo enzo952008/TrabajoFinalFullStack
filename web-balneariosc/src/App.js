@@ -10,6 +10,8 @@ function App() {
     <div>
       <NavBar />
       <Carousel />
+      <Footer />
+
     </div>
   );
 }

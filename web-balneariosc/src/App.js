@@ -2,6 +2,8 @@
 import './App.css';
 import Carousel from './carousel/Carousel-component';
 import NavBar from './navbar/navBar';
+import Footer from './footer/footer';
+
 
 function App() {
   return (

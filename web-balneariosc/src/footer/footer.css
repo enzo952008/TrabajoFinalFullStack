@@ -1,21 +1,27 @@
-
+/* src/footer/footer.css */
 .footer {
     background-color: #FFF8DE;
     padding: 20px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: Arial, sans-serif;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
 
-.footer p {
+.footer-text {
     margin: 0;
     color: #004500;
     font-weight: bold;
+    text-align: center;
 }
 
 .footer-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 10px;
 }
 
@@ -23,3 +29,16 @@
     height: 40px;
     margin: 0 10px;
 }
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .footer {
+        padding: 10px;
+    }
+
+    .footer-logos img {
+        margin: 5px;
+    }
+}
+
+

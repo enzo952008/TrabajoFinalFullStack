@@ -1,0 +1,25 @@
+
+.footer {
+    background-color: #FFF8DE;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+    color: #004500;
+    font-weight: bold;
+}
+
+.footer-logos {
+    margin-top: 10px;
+}
+
+.footer-logos img {
+    height: 40px;
+    margin: 0 10px;
+}

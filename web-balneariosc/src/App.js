@@ -1,8 +1,8 @@
 // src/App.js
 import './App.css';
-import Carousel from './carousel/Carousel-component';
-import NavBar from './navbar/navBar';
-import Footer from './footer/footer';
+import Carousel from './home/carousel/Carousel-component';
+import NavBar from './home/navbar/navBar';
+import Footer from './home/footer/footer';
 
 
 function App() {

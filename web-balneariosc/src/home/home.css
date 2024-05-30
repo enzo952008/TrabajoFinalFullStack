@@ -1,0 +1,11 @@
+/* Home.css */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
+  }
+  
+  .content {
+    flex: 1; /* Toma el espacio restante entre el NavBar y el Footer */
+  }
+  

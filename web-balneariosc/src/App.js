@@ -1,18 +1,13 @@
-// src/App.js
+import React from 'react';
+import Home from './home/home';
 import './App.css';
-import Carousel from './home/carousel/Carousel-component';
-import NavBar from './home/navbar/navBar';
-import Footer from './home/footer/footer';
-
 
 function App() {
-  return (
-    <div>
-      <NavBar />
-      <Carousel />
-      <Footer />
-    </div>
-  );
+    return (
+        <div className="App">
+            <Home />
+        </div>
+    );
 }
 
 export default App;

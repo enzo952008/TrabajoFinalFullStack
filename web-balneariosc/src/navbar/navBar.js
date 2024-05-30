@@ -1,6 +1,8 @@
 // src/navbar/NavBar.js
 import React from 'react';
 import './navBar.css';
+import logobalneario from './img-navbar/logobalneario.png';
+import profile from './img-navbar/profile.png'
 
 class NavBar extends React.Component {
     componentDidMount() {
@@ -19,7 +21,7 @@ class NavBar extends React.Component {
     render() {
         return (
             <div className="navbar">
-                <img className="logobalneario" src="img-navbar/logobalneario.png" alt="Logo" />
+                <img className="logobalneario" src={logobalneario} alt="Logo" />
                 <div className="menu-links" id="menu-links">
                     <a href="#link1">Clima</a>
                     <a href="#link2">Hospedaje</a>
@@ -27,9 +29,17 @@ class NavBar extends React.Component {
                     <a href="#link4">Aguas del Pinar</a>
                     <a href="#link5">Contacto</a>
                 </div>
-                <img className="logoprofile" src="img-navbar/profile.png" alt="Logo" />
-                <div className="menu-toggle" id="menu-toggle">&#9776;</div>
-            </div>
+                
+                <a href="#perfil"> {/* Enlace para el perfil */}
+            <img
+                className="logoprofile"
+                src={profile}
+                alt="Logo Profile"
+            />
+            </a>
+        <div className="menu-toggle" id="menu-toggle">&#9776;</div>
+      </div>
+            
         );
     }
 }

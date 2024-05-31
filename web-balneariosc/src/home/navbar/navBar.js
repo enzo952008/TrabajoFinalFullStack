@@ -29,23 +29,11 @@ class NavBar extends React.Component {
                     <a href="#link4">Aguas del Pinar</a>
                     <a href="#link5">Contacto</a>
                 </div>
-<<<<<<< HEAD:web-balneariosc/src/navbar/navBar.js
-                
-                <a href="#perfil"> {/* Enlace para el perfil */}
-            <img
-                className="logoprofile"
-                src={profile}
-                alt="Logo Profile"
-            />
-            </a>
-        <div className="menu-toggle" id="menu-toggle">&#9776;</div>
-      </div>
-            
-=======
-                <img className="logoprofile" src={profile} alt="Logo" />
+                <a href= "#profile-link">
+                <img className="logoprofile" src={profile} alt="Profile" />
+                </a>
                 <div className="menu-toggle" id="menu-toggle">&#9776;</div>
             </div>
->>>>>>> main:web-balneariosc/src/home/navbar/navBar.js
         );
     }
 }

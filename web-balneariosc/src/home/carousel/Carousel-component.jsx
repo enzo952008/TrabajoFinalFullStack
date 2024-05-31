@@ -11,7 +11,7 @@ export default class Carousel extends React.Component {
         return(
             <Swiper 
             modules={[Navigation, Pagination, Autoplay]}
-            autoplay={{delay: 1000}}
+            autoplay={{delay: 1500}}
             navigation={true}
             loop={true}
             pagination={{clickable:true}}

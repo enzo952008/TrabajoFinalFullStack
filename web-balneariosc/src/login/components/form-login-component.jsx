@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./form-login.css";
 
 const FormLogin = () => {
     const [email, setEmail] = useState('');
@@ -15,8 +16,8 @@ const FormLogin = () => {
     };
 
     return (
-        <form>
-            <div>
+        <form className="form-container">
+            <div className="form-group">
                 <label htmlFor="email">Correo electrónico</label>
                 <input
                     type="email"
@@ -25,6 +26,8 @@ const FormLogin = () => {
                     onChange={(e) => setEmail(e.target.value)}
                     required
                 />
+            </div>
+            <div className="form-group">
                 <label htmlFor="password">Contraseña</label>
                 <input
                     type="password"
@@ -34,7 +37,7 @@ const FormLogin = () => {
                     required
                 />
             </div>
-            <div>
+            <div className="form-buttons">
                 <button type="submit" onClick={handleLogin}>Ingresar</button>
                 <button type="button" onClick={handleRegister}>Registrarse</button>
             </div>

@@ -1,8 +1,8 @@
 /* Home.css */
 body {
-  background-color: #f0fff0; /* Cambia este valor al color que prefieras */
+  background-color: #f9f9f9; /* Cambia este valor al color que prefieras */
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: roboto;
 }
 
 .home-container {

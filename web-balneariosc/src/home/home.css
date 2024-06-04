@@ -1,0 +1,18 @@
+/* Home.css */
+body {
+  background-color: #f0fff0; /* Cambia este valor al color que prefieras */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f8ff; /* Asegura que el contenedor ocupe toda la altura de la ventana */
+  }
+  
+  .content {
+    flex: 1; /* Toma el espacio restante entre el NavBar y el Footer */
+  }
+  

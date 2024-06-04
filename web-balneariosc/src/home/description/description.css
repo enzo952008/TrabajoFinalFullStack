@@ -1,0 +1,26 @@
+.tourist-attraction-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9; /* Fondo opcional para mejor visualización */
+    border: 1px solid #ddd; /* Borde opcional para mejor visualización */
+    border-radius: 8px; /* Esquinas redondeadas opcionales */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional para mejor visualización */
+}
+
+.text-content {
+    flex: 1; /* Permite que el texto ocupe todo el espacio disponible */
+    max-width: 50%; /* Establece un ancho máximo para el texto */
+    margin-right: 30px; /* Espaciado entre el texto y la imagen */
+    font-size: 22px; /* Ajusta el tamaño del texto según tus necesidades */
+    color: #333; /* Color del texto */
+}
+
+.image-content img {
+    width: 620px; /* Ancho específico para la imagen */
+    height: 310px; /* Altura específica para la imagen */
+    object-fit: cover; /* Asegura que la imagen mantenga su proporción */
+    border-radius: 8px; /* Esquinas redondeadas opcionales */
+}
+

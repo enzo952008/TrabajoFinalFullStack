@@ -11,7 +11,7 @@ export default class Carousel extends React.Component {
         return(
             <Swiper 
             modules={[Navigation, Pagination, Autoplay]}
-            autoplay={{delay: 1000}}
+            autoplay={{delay: 1500}}
             navigation={true}
             loop={true}
             pagination={{clickable:true}}
@@ -26,6 +26,10 @@ export default class Carousel extends React.Component {
                 <SwiperSlide className='slide-item'>
                     <img src={require("./img/car-home-03.jpg")} alt="vista aérea del Balneario San Cayetano"/>
                 </SwiperSlide>
+                <SwiperSlide className='slide-item'>
+                    <img src={require("./img/imgcarousel.JPG")} alt="vista aérea del Balneario San Cayetano"/>
+                </SwiperSlide>
+                
                 </Swiper>
         )
     }

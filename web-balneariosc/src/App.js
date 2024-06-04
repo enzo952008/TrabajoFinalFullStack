@@ -1,16 +1,14 @@
 // src/App.js
 import './App.css';
-import Carousel from './home/carousel/Carousel-component';
-import NavBar from './home/navbar/navBar';
-import Footer from './home/footer/footer';
+import Home from './home/home';
+import Login from './login/login';
 
 
 function App() {
   return (
     <div>
-      <NavBar />
-      <Carousel />
-      <Footer />
+      < Home />
+      < Login />
     </div>
   );
 }

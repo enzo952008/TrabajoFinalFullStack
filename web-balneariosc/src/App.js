@@ -1,14 +1,16 @@
-import React from 'react';
+// src/App.js
+import './App.css';
 import Home from './home/home';
+import Login from './login/login';
 
-class App extends React.Component {
-    render() {
-        return (
-            <div>
-                <Home />
-            </div>
-        );
-    }
+
+function App() {
+  return (
+    <div>
+      < Home />
+      < Login />
+    </div>
+  );
 }
 
 export default App;

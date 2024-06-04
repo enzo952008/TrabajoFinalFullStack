@@ -1,4 +1,5 @@
 import React from 'react';
+import DescriptionTourist from '../components/description-component';
 import NavBar from '../components/navBar-component';
 import Carousel from '../components/Carousel-component';
 import Footer from '../components/footer-component';
@@ -10,6 +11,7 @@ class Home extends React.Component {
             <div>
                 <NavBar />
                 <Carousel />
+                <DescriptionTourist/>
                 <Footer />
                 
             </div>

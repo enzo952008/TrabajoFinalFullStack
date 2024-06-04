@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "../components/navBar-component";
 import FormLogin from "../components/form-login-component";
 import Footer from "../components/footer-component";
-import './login.css';
+import '../styles/login.css';
 
 const Login = () => {
     return (

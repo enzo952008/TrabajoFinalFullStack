@@ -1,8 +1,8 @@
 // src/navbar/NavBar.js
 import React from 'react';
-import './navBar.css';
-import logobalneario from './img-navbar/logobalneario.png';
-import profile from './img-navbar/profile.png'
+import '../styles/navBar.css';
+import logobalneario from '../home/navbar/img-navbar/logobalneario.png';
+import profile from '../home/navbar/img-navbar/profile.png'
 
 class NavBar extends React.Component {
     componentDidMount() {
@@ -25,7 +25,7 @@ class NavBar extends React.Component {
                 <div className="menu-links" id="menu-links">
                     <a href="#link1">Clima</a>
                     <a href="#link2">Hospedaje</a>
-                    <a href="#link3">Gastronomia</a>
+                    <a href="#link3">Gastronomía</a>
                     <a href="#link4">Aguas del Pinar</a>
                     <a href="#link5">Contacto</a>
                 </div>

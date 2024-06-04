@@ -4,7 +4,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import React from 'react';
-import "./carousel.css";
+import "../styles/carousel.css";
 
 export default class Carousel extends React.Component {
     render() {
@@ -18,16 +18,16 @@ export default class Carousel extends React.Component {
             direction='horizontal'
             className="swiper-container">
                 <SwiperSlide className='slide-item'>
-                    <img src={require("./img/car-home-01.jpg")} alt="vista aérea del Balneario San Cayetano"/>
+                    <img src={require("../home/carousel/img/car-home-01.jpg")} alt="vista aérea del Balneario San Cayetano"/>
                 </SwiperSlide>
                 <SwiperSlide className='slide-item'>
-                    <img src={require("./img/car-home-02.jpg")} alt="vista aérea del Balneario San Cayetano"/>
+                    <img src={require("../home/carousel/img/car-home-02.jpg")} alt="vista aérea del Balneario San Cayetano"/>
                 </SwiperSlide>
                 <SwiperSlide className='slide-item'>
-                    <img src={require("./img/car-home-03.jpg")} alt="vista aérea del Balneario San Cayetano"/>
+                    <img src={require("../home/carousel/img/car-home-03.jpg")} alt="vista aérea del Balneario San Cayetano"/>
                 </SwiperSlide>
                 <SwiperSlide className='slide-item'>
-                    <img src={require("./img/imgcarousel.JPG")} alt="vista aérea del Balneario San Cayetano"/>
+                    <img src={require("../home/carousel/img/imgcarousel.JPG")} alt="vista aérea del Balneario San Cayetano"/>
                 </SwiperSlide>
                 
                 </Swiper>

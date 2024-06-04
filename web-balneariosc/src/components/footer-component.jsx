@@ -1,7 +1,7 @@
 import React from 'react';
-import './footer.css';
-import logo1 from './img-footer/facebook.png'; // Asegúrate de tener los archivos de imagen
-import logo2 from './img-footer/instagram.png'; // en el directorio correcto
+import '../styles/footer.css';
+import logo1 from '../home/footer/img-footer/facebook.png'; // Asegúrate de tener los archivos de imagen
+import logo2 from '../home/footer/img-footer/instagram.png'; // en el directorio correcto
 
 class Footer extends React.Component {
     render() {

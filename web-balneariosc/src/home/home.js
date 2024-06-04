@@ -1,9 +1,8 @@
 import React from 'react';
-import NavBar from './navbar/navBar';
-import Carousel from './carousel/Carousel-component';
-import Footer from './footer/footer';
-import DescriptionTourist from './description/description-component';
-import './home.css'
+import NavBar from '../components/navBar-component';
+import Carousel from '../components/Carousel-component';
+import Footer from '../components/footer-component';
+import '../styles/home.css'
 
 class Home extends React.Component {
     render() {
@@ -11,8 +10,6 @@ class Home extends React.Component {
             <div>
                 <NavBar />
                 <Carousel />
-                <DescriptionTourist/>
-                <TouristAttractions/>
                 <Footer />
                 
             </div>

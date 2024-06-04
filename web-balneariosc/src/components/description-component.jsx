@@ -1,6 +1,6 @@
 import React from 'react';
-import './description.css';
-import imghome from './img/imgtext.JPG'
+import '..styles/description.css';
+import imghome from '../home/atraccionesturisticas/imgAtractions/imgtext.JPG'
 
 
 

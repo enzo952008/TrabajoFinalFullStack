@@ -1,18 +1,29 @@
 import React from 'react';
-import NavBar from './navbar/navBar';
-import Carousel from './carousel/Carousel-component';
-import Footer from './footer/footer';
-import DescriptionTourist from './description/description-component';
-import './home.css'
+import NavBar from '../components/navBar-component';
+import Carousel from '../components/Carousel-component';
+import DescriptionTourist from '../components/description-component';
+import Footer from '../components/footer-component';
+import Login from '../login/login';
+import { Route, Routes,} from 'react-router-dom';
+
+import '../styles/home.css'
 
 class Home extends React.Component {
     render() {
         return (
             <div>
                 <NavBar />
-                <Carousel />
-                <DescriptionTourist/>
-                <TouristAttractions/>
+                <Routes>
+                     {/* <Route path="/clima" component={Clima} /> 
+                    <Route path="/hospedaje" component={Hospedaje} />
+                    <Route path="/gastronomia" component={Gastronomia} />
+                    <Route path="/aguasdelpinar" component={AguasDelPinar} />
+                    <Route path="/contacto" component={Contacto} />
+                    <Route path="/profile" component={Profile} /> */}
+                    <Route path="/login" component={Login} /> 
+                </Routes>
+                <Carousel /> 
+                <DescriptionTourist/>            
                 <Footer />
                 
             </div>

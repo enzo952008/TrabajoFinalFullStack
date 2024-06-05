@@ -1,19 +1,23 @@
-// src/App.js
 import './App.css';
+import Login from './login/login'
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './home/home';
-import { BrowserRouter as Router, Route,  } from 'react-router-dom';
+import Layout from './components/layout-component';
 
 
 
-function App() {
+export default function App() {
   return (
-    <Router>
-    <Route>
-        <Route path="/home" component={Home} />
-    </Route>
-</Router>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Layout/>}></Route>
+      <Route index element={<Home/>}></Route>
+      <Route path='login' element={<Login/>}></Route>
+    </Routes>
+    </BrowserRouter>
   );
 }
 
-export default App;
-
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App/>)

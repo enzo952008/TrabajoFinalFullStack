@@ -3,8 +3,7 @@ import React from 'react';
 import '../styles/navBar.css';
 import logobalneario from '../home/navbar/img-navbar/logobalneario.png';
 import profile from '../home/navbar/img-navbar/profile.png';
-import Login from '../login/login';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class NavBar extends React.Component {
     componentDidMount() {
@@ -23,17 +22,19 @@ class NavBar extends React.Component {
     render() {
         return (
             <div className="navbar">
-                <img className="logobalneario" src={logobalneario} alt="Logo" />
+                <Link to= "/">
+                 <img className="logobalneario" src={logobalneario} alt="Logo" />
+                </Link>    
                 <div className="menu-links" id="menu-links">
-                <NavLink to="/clima">Clima</NavLink>
-                <NavLink to="/clima">Hospedaje</NavLink>
-                <NavLink to="/clima">Gastronomnia</NavLink>
-                <NavLink to="/clima">Aguas del Pinar</NavLink>
-                <NavLink to="/clima">Contacto</NavLink>
+                <Link to="/">Clima</Link>
+                <Link to="/">Hospedaje</Link>
+                <Link to="/">Gastronomía</Link>
+                <Link to="/">Aguas del Pinar</Link>
+                <Link to="/">Contacto</Link>
                 </div>
-                <NavLink to={Login}>
+                <Link to="/login">
                     <img className="logoprofile" src={profile} alt="Profile" />
-                </NavLink>
+                </Link>
                 <div className="menu-toggle" id="menu-toggle">&#9776;</div>
             </div>
         );

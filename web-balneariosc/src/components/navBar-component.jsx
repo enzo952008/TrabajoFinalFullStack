@@ -1,8 +1,9 @@
 // src/navbar/NavBar.js
 import React from 'react';
-import './navBar.css';
-import logobalneario from './img-navbar/logobalneario.png';
-import profile from './img-navbar/profile.png'
+import '../styles/navBar.css';
+import logobalneario from '../home/navbar/img-navbar/logobalneario.png';
+import profile from '../home/navbar/img-navbar/profile.png'
+import { Link } from 'react-router-dom';
 
 class NavBar extends React.Component {
     componentDidMount() {

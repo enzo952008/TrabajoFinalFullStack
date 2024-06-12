@@ -40,8 +40,14 @@
     color:#FFF8DE;
     cursor: pointer;
     background-color: #004500;
+    border-radius: 10px;
 }
 
 .form-buttons button:hover {
     transform: scale(1.1);
+}
+
+.form-title {
+    color: #004500;
+    padding-bottom: 5%;
 }

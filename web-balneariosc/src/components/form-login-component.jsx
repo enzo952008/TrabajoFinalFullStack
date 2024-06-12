@@ -17,6 +17,9 @@ const FormLogin = () => {
 
     return (
         <form className="form-container">
+            <div className="form-title">
+                <h3>¡Bienvenido/a!</h3>
+            </div>
             <div className="form-group">
                 <label htmlFor="email">Correo electrónico</label>
                 <input
@@ -38,8 +41,8 @@ const FormLogin = () => {
                 />
             </div>
             <div className="form-buttons">
-                <button type="submit" onClick={handleLogin}>Ingresar</button>
                 <button type="button" onClick={handleRegister}>Registrarse</button>
+                <button type="submit" onClick={handleLogin}>Ingresar</button>
             </div>
         </form>
     );

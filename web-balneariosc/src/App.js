@@ -5,6 +5,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './home/home';
 import Layout from './components/layout-component';
 
+import CreateAccount from './create-account/create-account';
+
 
 
 export default function App() {
@@ -14,6 +16,7 @@ export default function App() {
       <Route path='/' element={<Layout/>}></Route>
       <Route index element={<Home/>}></Route>
       <Route path='login' element={<Login/>}></Route>
+      <Route path='create-account' element={<CreateAccount/>}></Route>
     </Routes>
     </BrowserRouter>
   );

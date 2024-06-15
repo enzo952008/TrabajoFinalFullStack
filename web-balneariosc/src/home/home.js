@@ -2,6 +2,7 @@ import React from 'react';
 import NavBar from '../components/navBar-component';
 import Carousel from '../components/Carousel-component';
 import DescriptionTourist from '../components/description-component';
+import TouristAttractions from '../components/TouristAttractions-component';
 import Footer from '../components/footer-component';
 import Login from '../login/login';
 import { Route, Routes,} from 'react-router-dom';
@@ -22,6 +23,7 @@ class Home extends React.Component {
                 </Routes>
                 <Carousel />
                 <DescriptionTourist/>
+                <TouristAttractions/>
                 <Footer />
             </div>
         );

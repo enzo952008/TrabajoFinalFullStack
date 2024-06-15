@@ -1,7 +1,6 @@
 import React from 'react';
-import './TouristAttractions.css'; // Asegúrate de crear este archivo CSS
-import imghome from './imgAttractions/barco.JPG'
-
+import '../styles/TouristAttractions.css'; // Asegúrate de crear este archivo CSS
+import imghome from '../home/atraccionesturisticas/imgAttractions/barco.JPG';
 
 const TouristAttractions = () => {
     return (
@@ -10,7 +9,7 @@ const TouristAttractions = () => {
             <div className="cards-container">
                 <div className="card">
                     <div className="card-content">
-                        <p className="description">Descripción de la imagen 1</p>
+                        <p className="description">Pagrus</p>
                         <img src={imghome} alt="Imagen 1" />
                     </div>
                 </div>

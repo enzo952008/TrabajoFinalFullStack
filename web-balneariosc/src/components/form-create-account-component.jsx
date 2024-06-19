@@ -18,7 +18,6 @@ const FormCreateAccount = () => {
         console.log("Correo electrónico:", email);
         console.log("Contraseña:", password);
         console.log("Imagen de Perfil:", profileImg);
-        // Agregar lógica adicional para el registro aquí
     };
 
     const handleProfileImgChange = (e) => {

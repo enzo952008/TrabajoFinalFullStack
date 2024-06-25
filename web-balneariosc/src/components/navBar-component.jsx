@@ -25,13 +25,13 @@ class NavBar extends React.Component {
                 <Link to= "/">
                  <img className="logobalneario" src={logobalneario} alt="Logo" />
                 </Link>    
-                <div className="menu-links" id="menu-links">
-                    <a href="#link1">Clima</a>
-                    <a href="#link2">Hospedaje</a>
-                    <a href="#link3">Gastronomia</a>
-                    <a href="#link4">Aguas del Pinar</a>
-                    <a href="#link5">Contacto</a>
-                </div>
+                    <div className="menu-links" id="menu-links">
+                        <Link to="/clima">Clima</Link>
+            <a href="#link2">Hospedaje</a>
+            <a href="#link3">Gastronomia</a>
+            <a href="#link4">Aguas del Pinar</a>
+            <a href="#link5">Contacto</a>
+        </div>
                 <Link to="/login">
                     <img className="logoprofile" src={profile} alt="Profile" />
                 </Link>

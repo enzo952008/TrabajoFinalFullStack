@@ -11,13 +11,13 @@ const TouristAttractions = () => {
                 <div className="card">
                     <div className="card-content">
                         <p className="description">Pagrus</p>
-                        <img src={imghome} alt="Imagen 1" />
+                        <img src={imghome} alt="Pagrus" className="card-image" />
                     </div>
                 </div>
                 <div className="card">
                     <div className="card-content">
                         <p className="description">El Refugio</p>
-                        <img src={refugio} alt="Imagen 2" />
+                        <img src={refugio} alt="El Refugio" className="card-image" />
                     </div>
                 </div>
             </div>

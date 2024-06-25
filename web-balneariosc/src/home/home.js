@@ -1,4 +1,5 @@
 import React from 'react';
+import Windguru from '../components/Windguru-component';
 import NavBar from '../components/navBar-component';
 import Carousel from '../components/Carousel-component';
 import DescriptionTourist from '../components/description-component';
@@ -13,8 +14,8 @@ class Home extends React.Component {
             <div>
                 <NavBar />
                 <Routes>
-                     {/* <Route path="/clima" component={Clima} />
-                    <Route path="/hospedaje" component={Hospedaje} />
+                    <Route path="/clima" component={Windguru} />
+                    {/* <Route path="/hospedaje" component={Hospedaje} />
                     <Route path="/gastronomia" component={Gastronomia} />
                     <Route path="/aguasdelpinar" component={AguasDelPinar} />
                     <Route path="/contacto" component={Contacto} />

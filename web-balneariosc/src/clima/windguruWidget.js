@@ -26,7 +26,10 @@ const WindguruWidget = () => {
       ];
       script.src = `https://www.windguru.cz/js/widget.php?${arg.join('&')}`;
       script.async = true;
-      document.body.appendChild(script);
+      const widgetContainer = document.getElementById('windguru_forecast');
+      if (widgetContainer) {
+        widgetContainer.appendChild(script);
+      }
     }
   }, []);
 

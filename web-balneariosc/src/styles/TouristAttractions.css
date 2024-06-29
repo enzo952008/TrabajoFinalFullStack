@@ -1,57 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-body {
-    font-family: roboto 400;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9; /* Fondo opcional para toda la página */
-}
+/* TouristAttractions.css */
+/* TouristAttractions.css */
 
-.tourist-attractions {
+.tourist-attractions-container {
+    width: 100%;
+    padding: 20px;
+    background-color: #f9f9f9;
     text-align: center;
-    padding: 40px 20px;
-}
-
-.tourist-attractions h1 {
-    font-size: 2.5em;
+  }
+  
+  .tourist-title {
+    font-size: 3em;
     margin-bottom: 20px;
     color: #333;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-.cards-container {
+    text-align: center;
+  }
+  
+  .carousel-and-image {
     display: flex;
     justify-content: center;
-    gap: 300px; /* Espacio entre las tarjetas */
-}
-
-.card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 700px; /* Ancho fijo para las tarjetas */
-}
-
-.card-content {
-    position: relative;
-    text-align: center;
-}
-
-.card img {
+    align-items: center;
+    flex-wrap: wrap; /* Para asegurar que se comporten bien en pantallas pequeñas */
+  }
+  
+  .tourist-swiper-container {
+    height: 60vh;
+    width: 50%;
+  }
+  
+  .tourist-slide-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .tourist-slide-item img {
     width: 100%;
-    height: auto;
-    display: block;
-}
-
-.description {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-}
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .tourist-swiper-container .swiper-button-prev::after, 
+  .tourist-swiper-container .swiper-button-next::after {
+    color: #f7f7f7;
+  }
+  
+  .tourist-swiper-container .swiper-pagination > .swiper-pagination-bullet-active {
+    background-color: #f7f7f7;
+  }
+  
+  .side-image {
+    margin-left: 20px;
+    flex: 1;
+  }
+  
+  .side-image img {
+    width: 100%;
+    max-width: 900px; /* Ajustar el tamaño máximo de la imagen lateral */
+    height: auto; /* Mantener la proporción de la imagen */
+  }
+  
+  

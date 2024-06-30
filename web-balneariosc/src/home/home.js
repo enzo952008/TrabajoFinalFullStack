@@ -5,6 +5,7 @@ import DescriptionTourist from '../components/description-component';
 import TouristAttractions from '../components/TouristAttractions-component';
 import Footer from '../components/footer-component';
 import Login from '../login/login';
+import Clima from '../components/clima-component';
 import { Route, Routes,} from 'react-router-dom';
 import '../styles/home.css'
 class Home extends React.Component {
@@ -13,7 +14,7 @@ class Home extends React.Component {
             <div>
                 <NavBar />
                 <Routes>
-                    <Route path="/clima" component={Clima} />
+                    {/* <Route path="/clima" component={Clima} /> */}
                     {/* <Route path="/hospedaje" component={Hospedaje} />
                     <Route path="/gastronomia" component={Gastronomia} />
                     <Route path="/aguasdelpinar" component={AguasDelPinar} />

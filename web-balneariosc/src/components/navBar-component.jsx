@@ -26,7 +26,7 @@ class NavBar extends React.Component {
                  <img className="logobalneario" src={logobalneario} alt="Logo" />
                 </Link>    
                 <div className="menu-links" id="menu-links">
-                    <a href="/clima">Clima</a>
+                    <a href="#link1">Clima</a>
                     <a href="#link2">Hospedaje</a>
                     <a href="#link3">Gastronomia</a>
                     <a href="#link4">Aguas del Pinar</a>

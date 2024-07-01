@@ -1,0 +1,21 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    flex-basis: calc(20% - 10px); /* Calcula el ancho de cada tarjeta (20% del contenedor menos los márgenes) */
+    margin: 5px;
+    padding: 1em;
+  }
+  
+  .card img {
+    height: 150px;
+  }
+
+  .custom-button {
+    background-color: #d9ff00; /* Color de fondo azul */
+    color: #ffffff; /* Color del texto blanco */
+    border-color: #007bff; /* Color del borde igual al fondo para un diseño plano */
+  }

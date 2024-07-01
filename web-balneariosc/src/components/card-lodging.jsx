@@ -1,27 +1,42 @@
 import React, { useState } from "react";
+import '../styles/card.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import { Modal, Button } from 'react-bootstrap';
 
 function CardLodging({ hospedaje }) {
-  const [showDetails, setShowDetails] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
-  // Función para alternar la visibilidad de los detalles
-  const toggleDetails = () => {
-    setShowDetails(!showDetails);
-  };
+  const openModal = () => setShowModal(true);
+  const closeModal = () => setShowModal(false);
+
+  // Dividir la información en líneas individuales
+  const lines = hospedaje.informacion.split('\n').map((line, index) => (
+    <p key={index}>{line}</p>
+  ));
 
   return (
     <div className="card">
       <img src={hospedaje.imagen} alt={hospedaje.Nombre} className="card-img-top" />
       <div className="card-body">
         <h5 className="card-title">{hospedaje.Nombre}</h5>
-        {/* Mostrar detalles solo si showDetails es true */}
-        {showDetails && (
-          <div>
-            <p><strong>Descripción:</strong> {hospedaje.informacion}</p>
-          </div>
-        )}
-        <button onClick={toggleDetails} className="btn btn-primary">
-          {showDetails ? 'Menos info' : 'Más info'}
-        </button>
+        <Button variant="primary" onClick={openModal} className="custom-button">
+          Ver detalles
+        </Button>
+
+        <Modal show={showModal} onHide={closeModal} centered>
+          <Modal.Header closeButton>
+            <Modal.Title>{hospedaje.Nombre}</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            {lines}
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={closeModal} className="custom-button">
+              Cerrar
+            </Button>
+          </Modal.Footer>
+        </Modal>
       </div>
     </div>
   );

@@ -8,6 +8,7 @@ import Login from '../login/login';
 import { Route, Routes,} from 'react-router-dom';
 import '../styles/home.css'
 import LodgingSection from '../lodging/lodgingSection';
+
 class Home extends React.Component {
     render() {
         return (

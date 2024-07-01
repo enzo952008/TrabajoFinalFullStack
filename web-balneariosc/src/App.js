@@ -14,6 +14,7 @@ export default function App() {
   return (
     <BrowserRouter>
     <Routes>
+    <Route path='clima' element={<Windguru/>}></Route>
       <Route path='/' element={<Layout/>}></Route>
       <Route index element={<Home/>}></Route>
       <Route path='login' element={<Login/>}></Route>

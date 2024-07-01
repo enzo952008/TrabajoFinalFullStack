@@ -26,15 +26,15 @@ class NavBar extends React.Component {
                  <img className="logobalneario" src={logobalneario} alt="Logo" />
                 </Link>    
                     <div className="menu-links" id="menu-links">
-                        <Link to="/clima">Clima</Link>
-            <a href="#link2">Hospedaje</a>
-            <a href="#link3">Gastronomia</a>
-            <a href="#link4">Aguas del Pinar</a>
-            <a href="#link5">Contacto</a>
-        </div>
-                <Link to="/login">
+                    <a href="/clima">Clima</a>
+                    <a href="#link2">Hospedaje</a>
+                    <a href="#link3">Gastronomia</a>
+                    <a href="#link4">Aguas del Pinar</a>
+                    <a href="#link5">Contacto</a>
+            </div>
+                    <Link to="/login">
                     <img className="logoprofile" src={profile} alt="Profile" />
-                </Link>
+                    </Link>
                 <div className="menu-toggle" id="menu-toggle">&#9776;</div>
             </div>
         );

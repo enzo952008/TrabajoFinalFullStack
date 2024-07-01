@@ -3,7 +3,8 @@ import React from 'react';
 import WindguruWidget from '../clima/windguruWidget.js';
 import NavBar from './navBar-component.jsx';
 import Footer from './footer-component.jsx';
-import '../styles/windguruWidget.css';
+import TideWidget from '../clima/tideWidget.js';
+
 
 const Windguru = () => {
   return (
@@ -11,6 +12,9 @@ const Windguru = () => {
       <NavBar />
       <div className="widget-container">
         <WindguruWidget />
+      </div>
+      <div>
+        <TideWidget/>
       </div>
       <Footer />
     </div>

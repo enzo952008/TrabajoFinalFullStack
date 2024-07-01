@@ -14,7 +14,7 @@ class Home extends React.Component {
             <div>
                 <NavBar />
                 <Routes>
-                    <Route path="/clima" component={Windguru} />
+                    {/* <Route path="/clima" component={Windguru} /> */}
                     {/* <Route path="/hospedaje" component={Hospedaje} />
                     <Route path="/gastronomia" component={Gastronomia} />
                     <Route path="/aguasdelpinar" component={AguasDelPinar} />

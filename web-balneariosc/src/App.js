@@ -6,6 +6,8 @@ import Home from './home/home';
 import Windguru from './components/Windguru-component';
 import Layout from './components/layout-component';
 
+import CreateAccount from './create-account/create-account';
+
 
 
 export default function App() {
@@ -15,8 +17,7 @@ export default function App() {
       <Route path='/' element={<Layout/>}></Route>
       <Route index element={<Home/>}></Route>
       <Route path='login' element={<Login/>}></Route>
-      <Route path='clima' element={<Windguru/>}></Route>
-
+      <Route path='create-account' element={<CreateAccount/>}></Route>
     </Routes>
     </BrowserRouter>
   );

@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/form-login.css";
 
 const FormLogin = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const navigate = useNavigate();
 
     const handleLogin = (e) => {
         e.preventDefault();
@@ -11,8 +13,9 @@ const FormLogin = () => {
         console.log("password:", password);
     };
 
-    const handleRegister = (e) => {
+    const handleCreateAccount = (e) => {
         e.preventDefault();
+        navigate('/create-account');
     };
 
     return (
@@ -41,7 +44,7 @@ const FormLogin = () => {
                 />
             </div>
             <div className="form-buttons">
-                <button type="button" onClick={handleRegister}>Registrarse</button>
+                <button type="button" onClick={handleCreateAccount}>Crear cuenta</button>
                 <button type="submit" onClick={handleLogin}>Ingresar</button>
             </div>
         </form>

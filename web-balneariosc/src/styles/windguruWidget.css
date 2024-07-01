@@ -1,0 +1,31 @@
+/* styles.css */
+
+.windguru-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.widget-container {
+  flex: 1;
+  padding: 1em;
+}
+
+.windguru-widget-container {
+  width: 100%;
+  background-color: #f9f9f9;
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 1em;
+}
+
+.windguru-title {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.windguru-forecast {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

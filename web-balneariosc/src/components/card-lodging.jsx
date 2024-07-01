@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import '../styles/card.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import React, { useState } from 'react';
 import { Modal, Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles/card.css';
+
 
 function CardLodging({ hospedaje }) {
   const [showModal, setShowModal] = useState(false);
@@ -29,6 +29,7 @@ function CardLodging({ hospedaje }) {
             <Modal.Title>{hospedaje.Nombre}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
+            {/* Mostrar líneas individuales de información */}
             {lines}
           </Modal.Body>
           <Modal.Footer>
@@ -41,5 +42,6 @@ function CardLodging({ hospedaje }) {
     </div>
   );
 }
+
 
 export default CardLodging;

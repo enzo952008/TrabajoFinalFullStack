@@ -2,7 +2,7 @@ import React from "react";
 import Lodging from "./lodging";
 import NavBar from "../components/navBar-component";
 import Footer from "../components/footer-component";
-import '../styles/login.css';
+import '../styles/lodgingSection.css';
 
 const LodgingSection = () => {
     return (

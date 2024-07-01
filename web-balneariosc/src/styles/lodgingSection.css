@@ -1,0 +1,19 @@
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('../home/carousel/img/car-home-02.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.content-wrap {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}

@@ -8,14 +8,21 @@
     flex-basis: calc(20% - 10px); /* Calcula el ancho de cada tarjeta (20% del contenedor menos los márgenes) */
     margin: 5px;
     padding: 1em;
+    background-color: #FFF8DE;
   }
   
   .card img {
     height: 150px;
   }
 
-  .custom-button {
-    background-color: #d9ff00; /* Color de fondo azul */
-    color: #ffffff; /* Color del texto blanco */
-    border-color: #007bff; /* Color del borde igual al fondo para un diseño plano */
+  card-title {
+    color: #004500 !important;
+
+  }
+  button {
+    padding: 10px 20px !important;
+    color:#FFF8DE !important;
+    cursor: pointer !important;
+    background-color: #004500 !important;
+    border-radius: 10px !important;
   }

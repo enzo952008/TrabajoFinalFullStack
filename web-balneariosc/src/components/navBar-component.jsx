@@ -27,7 +27,7 @@ class NavBar extends React.Component {
                 </Link>    
                     <div className="menu-links" id="menu-links">
                     <a href="/clima">Clima</a>
-                    <a href="#link2">Hospedaje</a>
+                    <a href="/hospedaje">Hospedaje</a>
                     <a href="#link3">Gastronomia</a>
                     <a href="#link4">Aguas del Pinar</a>
                     <a href="#link5">Contacto</a>

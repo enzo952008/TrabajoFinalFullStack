@@ -23,7 +23,7 @@ function Camping() {
 
   return (
     <div>
-      <h1>Campings</h1>
+      <h2>Campings</h2>
       <div className='card-container'>
         {lodgings.map(lodging => (
           <CardLodging key={lodging.id} hospedaje={lodging} />

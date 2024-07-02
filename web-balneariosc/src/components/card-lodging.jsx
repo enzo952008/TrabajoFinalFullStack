@@ -24,7 +24,7 @@ function CardLodging({ hospedaje }) {
           Ver detalles
         </Button>
 
-        <Modal show={showModal} onHide={closeModal} centered>
+        <Modal show={showModal} onHide={closeModal} centered className='custom-modal'>
           <Modal.Header closeButton>
             <Modal.Title>{hospedaje.Nombre}</Modal.Title>
           </Modal.Header>

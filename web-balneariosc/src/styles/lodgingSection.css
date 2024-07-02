@@ -1,29 +1,13 @@
-/* .page-container {
+.page-container-lodging {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     background-image: url('../home/carousel/img/car-home-02.jpg');
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
+    position: relative;
 }
 
-.content-wrap {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-} */
-.page-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.content-wrap {
+.content-wrap-lodging {
     flex: 1;
     padding: 20px;
     display: flex;
@@ -33,39 +17,100 @@
 
 .button-container {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centra horizontalmente los botones */
+    align-items: center; /* Centra verticalmente los botones si el contenedor tiene altura */
     margin-bottom: 20px;
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
 }
 
 .button-container button {
-    padding: 15px 40px;
+    padding: 20px 60px; /* Incrementa el tamaño del botón */
     margin: 0 15px;  
     border: none;
-    border-radius: 10px; 
+    border-radius: 15px; /* Bordes más redondeados */
     background-color: #007BFF;
     color: white;
-    font-size: 18px; 
+    font-size: 20px; /* Aumenta el tamaño del texto */
     font-weight: bold;  
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease; 
-    height: 60px;      
+    height: 70px; /* Incrementa la altura del botón */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .button-container button.active {
-    background-color: #0056b3;
-    transform: scale(1.05); 
+    transform: scale(1.1); /* Incrementa la escala al estar activo */
 }
 
 .button-container button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
+    transform: scale(1.1); /* Incrementa la escala al pasar el mouse */
+}
+
+.content-wrap-lodging {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    flex: 1;
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.button-container button {
+    padding: 10%; /* Incrementa el tamaño del botón */
+    margin: 3%;  
+    color:#004500;
+    cursor: pointer;
+    background-color: #FFF8DE;
+    border-radius: 10px;
+    font-size: 45px;
+    font-weight: lighter;
+    height: auto;
+}
+
+.button-container button.active {
+    transform: scale(1.1); /* Incrementa la escala al estar activo */
+}
+
+.button-container button:hover {
+    transform: scale(1.1); /* Incrementa la escala al pasar el mouse */
 }
 
 .component-container {
     width: 100%;
-    display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 1%;
+}
+
+h2 {
+    color: #FFF8DE;
+    padding-bottom: 2%;
+    text-align: center;
+    font-weight:400;
+    text-shadow: 1px 1px 5px rgb(25, 25, 25); ;
+}
+
+.back-link {
+    position: absolute; /* Posiciona el texto de manera absoluta */
+    top: 15%; /* Ajusta la distancia desde la parte superior */
+    left: 2%; /* Ajusta la distancia desde la izquierda */
+    color: #FFF8DE;
+    cursor: pointer;
+    font-size: 18px;
     margin-top: 20px;
+    text-shadow: 1px 1px 4px rgb(25, 25, 25); ;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #004500;
 }

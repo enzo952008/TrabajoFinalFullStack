@@ -18,27 +18,36 @@ const LodgingSection = () => {
         return null; // No renderiza nada si no se ha seleccionado un componente
     };
 
+    const handleBackClick = () => {
+        setSelectedComponent(null);
+    };
+
     return (
-        <div className="page-container">
+        <div className="page-container-lodging">
             <NavBar />
-            <div className="content-wrap">
-                <div className="button-container">
-                    <button 
-                        className={selectedComponent === 'lodging' ? 'active' : ''} 
-                        onClick={() => setSelectedComponent('lodging')}
-                    >
-                        Alojamientos
-                    </button>
-                    <button 
-                        className={selectedComponent === 'camping' ? 'active' : ''} 
-                        onClick={() => setSelectedComponent('camping')}
-                    >
-                        Campings
-                    </button>
-                </div>
+            <div className="content-wrap-lodging">
+                {!selectedComponent && (
+                    <div className="button-container">
+                        <button
+                            className={selectedComponent === 'lodging' ? 'active' : ''}
+                            onClick={() => setSelectedComponent('lodging')}
+                        >
+                            Sector hotelero
+                        </button>
+                        <button
+                            className={selectedComponent === 'camping' ? 'active' : ''}
+                            onClick={() => setSelectedComponent('camping')}
+                        >
+                            Campings
+                        </button>
+                    </div>
+                )}
                 <div className="component-container">
                     {renderComponent()}
                 </div>
+                {selectedComponent && (
+                    <div className="back-link" onClick={handleBackClick}>← Volver</div>
+                )}
             </div>
             <Footer />
         </div>

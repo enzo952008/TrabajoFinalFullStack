@@ -29,7 +29,7 @@ function CardLodging({ hospedaje }) {
             <Modal.Title>{hospedaje.Nombre}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            {/* Mostrar líneas individuales de información */}
+            <h6>Descripción</h6>
             {lines}
           </Modal.Body>
           <Modal.Footer>

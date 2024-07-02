@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import CardLodging from '../components/card-lodging';
 
-function Lodging() {
+function Camping() {
   const [lodgings, setLodgings] = useState([]);
 
   useEffect(() => {
     const fetchLodgings = async () => {
       try {
-        const response = await fetch('/data/hospedajes.json'); // Ruta desde la carpeta public
+        const response = await fetch('/data/campings.json'); // Ruta desde la carpeta public
         if (!response.ok) {
           throw new Error('Error en la respuesta del servidor');
         }
@@ -23,7 +23,7 @@ function Lodging() {
 
   return (
     <div>
-      <h1>Alojamientos</h1>
+      <h1>Campings</h1>
       <div className='card-container'>
         {lodgings.map(lodging => (
           <CardLodging key={lodging.id} hospedaje={lodging} />
@@ -33,4 +33,4 @@ function Lodging() {
   );
 }
 
-export default Lodging;
+export default Camping;

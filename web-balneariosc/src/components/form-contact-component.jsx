@@ -56,7 +56,9 @@ const FormContact = () => {
           required
         />
       </div>
+      <div className="form-buttons">
       <button type="submit">Enviar</button>
+      </div>
     </form>
   );
 };

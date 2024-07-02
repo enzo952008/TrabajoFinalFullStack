@@ -1,0 +1,20 @@
+.tide-widget-container {
+    text-align: center; /* Centra el contenido del contenedor */
+    margin: 20px; /* Espaciado alrededor del contenedor */
+  }
+  
+  .tide-title {
+        font-size: 24px; /* Tamaño de fuente del título */
+        margin-bottom: 20px; /* Espaciado debajo del título */
+        text-align: center; /* Centra el texto del título */
+      }
+  
+  
+  .tide-forecast {
+    display: flex;
+    justify-content: center; /* Centra el contenido dentro del contenedor de la tabla */
+    overflow-x: auto; /* Permite el desplazamiento horizontal si es necesario */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    max-width: 100%; /* Asegura que el contenedor no exceda el ancho disponible */
+  }
+  

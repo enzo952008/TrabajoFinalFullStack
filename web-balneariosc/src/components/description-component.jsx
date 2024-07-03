@@ -3,7 +3,6 @@ import '../styles/description.css';
 import imghome from '../home/atraccionesturisticas/imgAttractions/imgtext.JPG'
 
 
-
 const DescriptionTourist = () => {
     return (
         <div className="tourist-attraction-container">
@@ -19,10 +18,11 @@ const DescriptionTourist = () => {
                 </p>
             </div>
             <div className="image-content">
-                <img src={imghome} alt='imagenturistica'></img>
+                <img src={imghome} alt='imagenturistica' />
             </div>
         </div>
     );
 }
 
 export default DescriptionTourist;
+

@@ -1,5 +1,7 @@
 /* styles.css */
-
+.windguru-title{
+  color:#004500;
+}
 .windguru-page {
   display: flex;
   flex-direction: column;

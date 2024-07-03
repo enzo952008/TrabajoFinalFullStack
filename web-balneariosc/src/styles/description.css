@@ -1,5 +1,6 @@
 .tourist-attraction-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
@@ -11,16 +12,33 @@
 
 .text-content {
     flex: 1; /* Permite que el texto ocupe todo el espacio disponible */
-    max-width: 50%; /* Establece un ancho máximo para el texto */
-    margin-right: 30px; /* Espaciado entre el texto y la imagen */
+    max-width: 100%; /* Establece un ancho máximo para el texto */
+    margin-bottom: 20px; /* Espaciado entre el texto y la imagen */
     font-size: 22px; /* Ajusta el tamaño del texto según tus necesidades */
     color: #333; /* Color del texto */
 }
 
 .image-content img {
-    width: 620px; /* Ancho específico para la imagen */
-    height: 310px; /* Altura específica para la imagen */
+    width: 100%; /* La imagen ocupará todo el ancho disponible */
+    height: auto; /* La altura se ajustará automáticamente */
     object-fit: cover; /* Asegura que la imagen mantenga su proporción */
     border-radius: 8px; /* Esquinas redondeadas opcionales */
+}
+
+@media (min-width: 768px) {
+    .tourist-attraction-container {
+        flex-direction: row;
+    }
+    
+    .text-content {
+        max-width: 50%; /* Establece un ancho máximo para el texto en pantallas más grandes */
+        margin-right: 30px; /* Espaciado entre el texto y la imagen en pantallas más grandes */
+        margin-bottom: 0; /* Elimina el margen inferior en pantallas más grandes */
+    }
+    
+    .image-content img {
+        width: 620px; /* Ancho específico para la imagen en pantallas más grandes */
+        height: 310px; /* Altura específica para la imagen en pantallas más grandes */
+    }
 }
 

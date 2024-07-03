@@ -5,9 +5,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './home/home';
 import Windguru from './components/Windguru-component';
 import Layout from './components/layout-component';
-import Profile from './components/UserProfile-component';
+import Profile from './profile/profile'
 import CreateAccount from './create-account/create-account';
-
 import LodgingSection from './lodging/lodgingSection';
 
 

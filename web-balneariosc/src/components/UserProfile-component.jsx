@@ -32,7 +32,7 @@ const UserProfile = () => {
               </h3>
             </div>
             <label htmlFor="file-upload" className="custom-file-upload">
-              Cambiar imagen
+              Editar
             </label>
             <input
               id="file-upload"

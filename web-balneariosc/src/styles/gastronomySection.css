@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url('../home/carousel/img/car-home-02.jpg');
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH8_Jj2kGUSHgTcFy0iJNfA8qVRJJcuSnQkg&s');
     background-size: cover;
     position: relative;
 }

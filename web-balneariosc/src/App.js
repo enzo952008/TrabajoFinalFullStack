@@ -8,6 +8,7 @@ import Layout from './components/layout-component';
 import CreateAccount from './create-account/create-account';
 import LodgingSection from './lodging/lodgingSection';
 import Contact from './contacto/contact';
+import GastronomySection from './gastronomy/gastronomySection';
 
 
 export default function App() {

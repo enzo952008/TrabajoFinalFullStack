@@ -9,6 +9,7 @@ import CreateAccount from './create-account/create-account';
 import LodgingSection from './lodging/lodgingSection';
 import Contact from './contacto/contact';
 import GastronomySection from './gastronomy/gastronomySection';
+import Profile from './profile/profile';
 
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
       <Route path='create-account' element={<CreateAccount/>}></Route>
       <Route path='hospedaje' element={<LodgingSection/>}></Route>
       <Route path='contacto' element={<Contact/>}></Route>
+      <Route path='perfil' element={<Profile/>}></Route>
     </Routes>
     </BrowserRouter>
   );

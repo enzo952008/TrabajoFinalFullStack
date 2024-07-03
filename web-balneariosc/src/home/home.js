@@ -11,6 +11,8 @@ import { Route, Routes,} from 'react-router-dom';
 import '../styles/home.css'
 import LodgingSection from '../lodging/lodgingSection';
 import GastronomySection from '../gastronomy/gastronomySection';
+import Profile from '../profile/profile';
+
 
 
 class Home extends React.Component {
@@ -24,7 +26,7 @@ class Home extends React.Component {
                     <Route path="/gastronomia" component={GastronomySection} />
                     {/* <Route path="/aguasdelpinar" component={AguasDelPinar} /> */}
                     <Route path="/contacto" component={Contact} />
-                    {/* <Route path="/profile" component={Profile} />  */}
+                     <Route path="/perfil" component={Profile} />
                     <Route path="/login" component={Login} /> 
                 </Routes>
                 <Carousel />

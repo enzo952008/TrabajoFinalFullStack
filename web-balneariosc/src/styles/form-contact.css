@@ -58,3 +58,7 @@ textarea#mensaje {
   padding: 8px;
   box-sizing: border-box;
 }
+
+.title-form {
+  color:#004500;
+}

@@ -51,7 +51,16 @@
   
   .side-image {
     margin-left: 20px;
-    flex: 1;
+    cursor: pointer;
+    transition: transform 0.3s ease, left 0.3s ease, top 0.3s ease;
+  }
+  .side-image img.enlarged {
+    transform: scale(1.5); /* Ajusta el valor de escala según tus necesidades */
+    z-index: 10; /* Asegúrate de que la imagen agrandada esté sobre otros elementos */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.5);
   }
   
   .side-image img {
@@ -59,5 +68,6 @@
     max-width: 900px; /* Ajustar el tamaño máximo de la imagen lateral */
     height: auto; /* Mantener la proporción de la imagen */
   }
+  
   
   

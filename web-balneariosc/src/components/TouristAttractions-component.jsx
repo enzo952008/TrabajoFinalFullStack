@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../styles/TouristAttractions.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
@@ -7,6 +7,12 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const TouristAttractions = () => {
+  const [isEnlarged, setIsEnlarged] = useState(false);
+
+  const handleImageClick = () => {
+    setIsEnlarged(!isEnlarged);
+  };
+
   return (
     <div className="tourist-attractions-container">
       <h2 className="tourist-title">Vení a visitarnos</h2>
@@ -43,7 +49,12 @@ const TouristAttractions = () => {
           </SwiperSlide>
         </Swiper>
         <div className="side-image">
-          <img src={require("../home/atraccionesturisticas/imgAttractions/briosc.jpg.png")} alt="imagen lateral" />
+          <img 
+            src={require("../home/atraccionesturisticas/imgAttractions/briosc.jpg.png")} 
+            alt="imagen lateral"
+            className={isEnlarged ? 'enlarged' : ''}
+            onClick={handleImageClick}
+          />
         </div>
       </div>
     </div>

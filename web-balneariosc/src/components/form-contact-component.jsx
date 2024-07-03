@@ -16,7 +16,7 @@ const FormContact = () => {
   return (
 
     <form className="formulario" onSubmit={handleSubmit}>
-      <div><h3>Contactanos</h3></div>
+      <div><h2>Contactanos</h2></div>
       <div className="form-group">
         <label htmlFor="nombre">Nombre:</label>
         <input

@@ -1,4 +1,4 @@
-.page-container {
+.page-container-contact {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -15,8 +15,7 @@
     display: flex;
     justify-content:center ;
     align-items: flex-start; /* Alinea los elementos al principio del eje vertical */
-    
-    gap: 150px; /* Espacio entre las dos columnas */
+    gap: 200px; /* Espacio entre las dos columnas */
     max-width: 1200px; /* Ajusta el ancho máximo según sea necesario */
     width: 100%; /* Asegura que ocupe el 100% del contenedor */
     margin: 0 auto; /* Centra el contenido horizontalmente */
@@ -49,14 +48,14 @@
 }
 
 .right-column {
-    flex: 3; /* Redefine el tamaño de right-column */
+    flex: 6; /* Redefine el tamaño de right-column */
     padding: 20px;
     border-radius: 10px;
     display: flex; /* Asegúrate de que la columna use flexbox */
     flex-direction: column;
     align-items: center; /* Alinea el contenido al centro */
-    max-width: 600px; /* Ajusta el ancho máximo según sea necesario */
-    width: 80%; /* Asegura que ocupe el 100% del contenedor */
+    max-width: 100%; /* Ajusta el ancho máximo según sea necesario */
+    width: 100%; /* Asegura que ocupe el 100% del contenedor */
 }
 
 .right-column form {

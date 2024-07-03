@@ -9,6 +9,8 @@ import Login from '../login/login';
 import { Route, Routes,} from 'react-router-dom';
 import '../styles/home.css'
 import LodgingSection from '../lodging/lodgingSection';
+import GastronomySection from '../gastronomy/gastronomySection';
+
 
 class Home extends React.Component {
     render() {
@@ -18,11 +20,11 @@ class Home extends React.Component {
                 <Routes>
                     <Route path="/clima" component={Windguru} />
                     <Route path="/hospedaje" component={LodgingSection} />
-                    {/* <Route path="/gastronomia" component={Gastronomia} />
-                    <Route path="/aguasdelpinar" component={AguasDelPinar} />
-                    <Route path="/contacto" component={Contacto} />
-                    <Route path="/profile" component={Profile} /> */}
-                    <Route path="/login" component={Login} /> 
+                     <Route path="/gastronomia" component={GastronomySection}/>
+                     {/* <Route path="/aguasdelpinar" component={AguasDelPinar} />
+                    // <Route path="/contacto" component={Contacto} />
+                    // <Route path="/profile" component={Profile} /> */}
+                    <Route path="/login" component={Login} />
                 </Routes>
                 <Carousel />
                 <DescriptionTourist/>

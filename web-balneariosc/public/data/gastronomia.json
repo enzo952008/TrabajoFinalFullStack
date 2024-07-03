@@ -1,0 +1,32 @@
+[
+    {
+      "id": "06ccdd0e-e621-4a5d-b653-c932b9df171a",
+      "nombre": "ANALIA STEFANO PASTELERIA ARTESANAL",
+      "informacion": "Para desayunar, merendar o comer algo dulce.\nTortas, alfajores, sandwichs, café y más!\nPastelería , restó !!!\nBalneario San Cayetano!!!\nAbierto todos los fines de semana del año!!!!\n Todo Artesanal!!!\nReservas al 2983407209",
+      "ubicacion": "LOS EUCALIPTOS, ENTRE LOS TAMARISCOS Y LOS CIPRESES.",
+      "imagen": "https://sancayetano.tur.ar/wp-content/uploads/2021/01/Screenshot_20210118-101200-11-264x300.jpg"
+    },
+    {
+      "id": "5e27480b-3d7d-4dc1-827d-6f8baf2f479c",
+      "nombre": "PARADOR TURÍSTICO ZEBRA BEACH",
+      "informacion": "Abierto todo el día. Restorán, minutas, helados, tragos.",
+      "ubicacion": "FRENTE A LA PLAYA.",
+      "imagen": "https://sancayetano.tur.ar/wp-content/uploads/2017/11/parador-turistico-e1510848252295-300x136.jpg"
+    },
+    {
+      "id": "6d9a2c96-d7bd-4a54-8acb-cf18230e7121",
+      "nombre": "FOOD TRUCK «EL CHARRUA»",
+      "informacion": "Panchos, hamburguesas, bondiolas, papas fritas, gaseosas, ensaladas de fruta y tragos.",
+      "ubicacion": "Ubicado en la zona de baño, cerca del refugio de guardavidas.",
+      "imagen": "url_de_imagen_4"
+    },
+    {
+      "id": "50f84b4a-4e18-4011-8509-7b4df1a2ee58",
+      "nombre": "chapita BAR DE CERVEZAS",
+      "informacion": "Centro de recarga de cerveza artesanal tirada, cerveza artesanal.",
+      "ubicacion": "SECTOR HOTELERO.",
+      "imagen": "https://sancayetano.tur.ar/wp-content/uploads/2021/01/Screenshot_20210118-102409-11-300x196.jpg"
+    }
+    
+  ]
+  

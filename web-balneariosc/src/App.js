@@ -8,6 +8,7 @@ import Layout from './components/layout-component';
 
 import CreateAccount from './create-account/create-account';
 
+import LodgingSection from './lodging/lodgingSection';
 
 
 export default function App() {
@@ -20,6 +21,7 @@ export default function App() {
       <Route index element={<Home/>}></Route>
       <Route path='login' element={<Login/>}></Route>
       <Route path='create-account' element={<CreateAccount/>}></Route>
+      <Route path='hospedaje' element={<LodgingSection/>}></Route>
     </Routes>
     </BrowserRouter>
   );

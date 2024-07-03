@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Modal, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles/card.css';
 
 
 function CardGastronomy({ gastronomia }) {
@@ -15,11 +16,11 @@ function CardGastronomy({ gastronomia }) {
     ));
   
     return (
-      <div className="card-gastronomy">
-        <img src={gastronomia.imagen} alt={gastronomia.Nombre} className="card-gastronomy-img-top" />
-        <div className="card-gastronomy-body">
-          <h5 className="card-gastronomy-title">{gastronomia.Nombre}</h5>
-          <Button variant="primary" onClick={openModal} className="card-gastronomy-button">
+      <div className="card">
+        <img src={gastronomia.imagen} alt={gastronomia.Nombre} className="card-img-top" />
+        <div className="card-body">
+          <h5 className="card-title">{gastronomia.Nombre}</h5>
+          <Button variant="primary" onClick={openModal} className="custom-button">
             Ver detalles
           </Button>
   
@@ -32,7 +33,7 @@ function CardGastronomy({ gastronomia }) {
               {lines}
             </Modal.Body>
             <Modal.Footer>
-              <Button variant="secondary" onClick={closeModal} className="card-gastronomy-button">
+              <Button variant="secondary" onClick={closeModal} className="custom-button">
                 Cerrar
               </Button>
             </Modal.Footer>

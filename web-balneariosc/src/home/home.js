@@ -6,6 +6,7 @@ import DescriptionTourist from '../components/description-component';
 import TouristAttractions from '../components/TouristAttractions-component';
 import Footer from '../components/footer-component'; 
 import Login from '../login/login';
+import Contact from '../contacto/contact';
 import { Route, Routes,} from 'react-router-dom';
 import '../styles/home.css'
 import LodgingSection from '../lodging/lodgingSection';

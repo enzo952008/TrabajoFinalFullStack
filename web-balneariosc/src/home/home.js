@@ -10,6 +10,8 @@ import Contact from '../contacto/contact';
 import { Route, Routes,} from 'react-router-dom';
 import '../styles/home.css'
 import LodgingSection from '../lodging/lodgingSection';
+import GastronomySection from '../gastronomy/gastronomySection';
+
 
 class Home extends React.Component {
     render() {

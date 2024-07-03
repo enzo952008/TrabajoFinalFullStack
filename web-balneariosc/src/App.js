@@ -7,8 +7,7 @@ import Windguru from './components/Windguru-component';
 import Layout from './components/layout-component';
 import CreateAccount from './create-account/create-account';
 import LodgingSection from './lodging/lodgingSection';
-import GastronomySection from './gastronomy/gastronomySection';
-
+import Contact from './contacto/contact';
 
 
 export default function App() {
@@ -22,6 +21,7 @@ export default function App() {
       <Route path='login' element={<Login/>}></Route>
       <Route path='create-account' element={<CreateAccount/>}></Route>
       <Route path='hospedaje' element={<LodgingSection/>}></Route>
+      <Route path='contacto' element={<Contact/>}></Route>
     </Routes>
     </BrowserRouter>
   );

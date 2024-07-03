@@ -1,0 +1,69 @@
+.page-container-contact {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('https://bafilma.gba.gob.ar/sites/default/files/styles/1280x1280/public/locaciones/IMG_7912.jpg.webp?itok=Ux1OrywY');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.content-wrap {
+    flex: 1;
+    display: flex;
+    justify-content:center ;
+    align-items: flex-start; /* Alinea los elementos al principio del eje vertical */
+    gap: 200px; /* Espacio entre las dos columnas */
+    max-width: 1200px; /* Ajusta el ancho máximo según sea necesario */
+    width: 100%; /* Asegura que ocupe el 100% del contenedor */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+.left-column {
+    flex: 6; /* Aumenta el tamaño de left-column */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea el contenido a la izquierda */
+    text-align: left; /* Alinea el texto a la izquierda */
+    padding: 20px;
+    background: #FFF8DE;
+    border-radius: 10px;
+    max-width: 1200px; /* Ajusta el ancho máximo según sea necesario */
+    width: 100%; /* Asegura que ocupe el 100% del contenedor */
+}
+
+.contact-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right-column {
+    flex: 6; /* Redefine el tamaño de right-column */
+    padding: 20px;
+    border-radius: 10px;
+    display: flex; /* Asegúrate de que la columna use flexbox */
+    flex-direction: column;
+    align-items: center; /* Alinea el contenido al centro */
+    max-width: 100%; /* Ajusta el ancho máximo según sea necesario */
+    width: 100%; /* Asegura que ocupe el 100% del contenedor */
+}
+
+.right-column form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+
+

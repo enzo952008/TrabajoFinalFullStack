@@ -18,7 +18,7 @@ class Home extends React.Component {
                     <Route path="/hospedaje" component={Hospedaje} />
                     <Route path="/gastronomia" component={Gastronomia} />
                     <Route path="/aguasdelpinar" component={AguasDelPinar} /> */}
-                    <Route path="/contacto" component={Contact} />
+                    {/* <Route path="/contacto" component={Contact} /> */}
                     {/* <Route path="/profile" component={Profile} />  */}
                     <Route path="/login" component={Login} />
                 </Routes>

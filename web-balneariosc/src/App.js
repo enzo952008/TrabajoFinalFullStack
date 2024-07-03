@@ -18,7 +18,7 @@ export default function App() {
       <Route index element={<Home/>}></Route>
       <Route path='login' element={<Login/>}></Route>
       <Route path='create-account' element={<CreateAccount/>}></Route>
-      <Route path='contacto' element={<Contact/>}> </Route>
+      {/* <Route path='contacto' element={<Contact/>}> </Route> */}
     </Routes>
     </BrowserRouter>
   );

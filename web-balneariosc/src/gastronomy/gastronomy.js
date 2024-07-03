@@ -23,7 +23,7 @@ function Gastronomy() {
 
   return (
     <div>
-      <h2>Gastronomia</h2>
+      <h2 className='titleGastronomy'>Gastronomia</h2>
       <div className='card-container'>
         {gastronomys.map(gastronomy => (
           <CardGastronomy key={gastronomy.id} gastronomia={gastronomy} />

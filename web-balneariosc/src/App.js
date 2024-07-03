@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './home/home';
 import Windguru from './components/Windguru-component';
 import Layout from './components/layout-component';
-
+import Profile from './components/UserProfile-component';
 import CreateAccount from './create-account/create-account';
 
 import LodgingSection from './lodging/lodgingSection';
@@ -22,6 +22,7 @@ export default function App() {
       <Route path='login' element={<Login/>}></Route>
       <Route path='create-account' element={<CreateAccount/>}></Route>
       <Route path='hospedaje' element={<LodgingSection/>}></Route>
+      <Route path='profile' element={<Profile/>}></Route>
     </Routes>
     </BrowserRouter>
   );

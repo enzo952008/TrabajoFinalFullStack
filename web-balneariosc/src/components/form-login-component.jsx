@@ -2,12 +2,17 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/form-login.css";
 
+//react-router-dom es una librería para React que facilita la 
+//implementación de la navegación y el enrutamiento en una aplicación
+
 const FormLogin = () => {
+    //estados para almacenar la informacion
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const navigate = useNavigate();
+    const navigate = useNavigate(); //funcion para redirigir al usuario a diferentes rutas dentro de la app<
 
     const handleLogin = (e) => {
+        //evita que se recargue la pagina al enviar
         e.preventDefault();
         console.log("email:", email);
         console.log("password:", password);
@@ -15,6 +20,7 @@ const FormLogin = () => {
 
     const handleCreateAccount = (e) => {
         e.preventDefault();
+        //navega al form de creacion de cuenta
         navigate('/create-account');
     };
 

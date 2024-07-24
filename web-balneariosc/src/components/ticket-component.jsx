@@ -79,8 +79,12 @@ const TicketBooking = () => {
           </ul>
         </div>
       </div>
-      {selectedDate && <p>Fecha seleccionada: {formatDate(selectedDate)}</p>}
-      <TicketSelector isOpen={modalIsOpen} closeModal={closeModal} selectedDate={selectedDate} />
+      {modalIsOpen && (
+        <>
+          {selectedDate && <p>Fecha seleccionada: {formatDate(selectedDate)}</p>}
+          <TicketSelector isOpen={modalIsOpen} closeModal={closeModal} selectedDate={selectedDate} />
+        </>
+      )}
     </div>
   );
 };

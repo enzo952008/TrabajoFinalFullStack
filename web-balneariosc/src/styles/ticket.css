@@ -1,0 +1,117 @@
+.header {
+    color: #568773 !important;
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 50px; /* Ajusta según sea necesario */
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.2); /* Más oscuro con menor opacidad */
+}
+
+.header h2 {
+    text-align: left;
+    color: #568773;
+    font-size: 54px;
+    margin: 0;
+}
+
+.header p {
+    font-size: 35px;
+    margin: 5px 0 0;
+}
+
+.ticket-booking {
+    text-align: center;
+    background-image: url('../home/atraccionesturisticas/imgAttractions/FondoTicket.png');
+    min-height: 100vh;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .content-container {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%; /* Ocupa el ancho completo de la pantalla */
+    margin: 0 auto;
+  }
+  
+  .dates-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 70%; /* Ocupa el 70% del ancho de la pantalla */
+  }
+  
+  .date-card {
+    color: white;
+    background-color: #568773;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 30px; /* Aumentado para tarjetas más grandes */
+    margin: 10px;
+    width: calc(33.33% - 20px); /* Tres tarjetas por fila con márgenes ajustados */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1.2em; /* Aumentar el tamaño de la fuente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .date-card:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+  }
+  
+  .date-card.selected {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .buy-ticket-button {
+    background-color: white !important;
+    color: #568773 !important ;
+    margin-top: 20px; /* Espacio entre el texto y el botón */
+    padding: 5px 10px; /* Reducir el tamaño del botón */
+    font-size: 0.9em; /* Reducir el tamaño de la fuente del botón */
+    align-self: center; /* Centrar el botón */
+  }
+  
+  .tariff-card {
+    background-color: white;
+    color: #568773;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 30px; /* Aumentado para tarjetas más grandes */
+    margin: 10px;
+    width: 25%; /* Ocupa el 25% del ancho de la pantalla */
+    text-align: left;
+    font-size: 1.2em; /* Aumentar el tamaño de la fuente */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 1200px) {
+    .dates-container {
+      width: 100%; /* Ocupa el ancho completo en pantallas medianas */
+    }
+  
+    .tariff-card {
+      width: 100%; /* Tarjeta de tarifas ocupa todo el ancho en pantallas medianas */
+      margin-top: 20px; /* Añadir espacio encima de la tarjeta de tarifas */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .date-card {
+      width: calc(50% - 20px); /* Dos tarjetas por fila en pantallas medianas */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .date-card {
+      width: calc(100% - 20px); /* Una tarjeta por fila en pantallas pequeñas */
+    }
+  }
+  
+  

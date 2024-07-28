@@ -12,12 +12,9 @@ import '../styles/home.css'
 import LodgingSection from '../lodging/lodgingSection';
 import GastronomySection from '../gastronomy/gastronomySection';
 import Profile from '../profile/profile';
-<<<<<<< HEAD
 import TicketsSection from '../AguasDelPinar/ticket';
 
-=======
 import AguasDelPinar from '../aguasPinar/aguasDelPinar';
->>>>>>> origin/aguasdelpinar
 
 
 

@@ -10,6 +10,7 @@ import LodgingSection from './lodging/lodgingSection';
 import Contact from './contacto/contact';
 import GastronomySection from './gastronomy/gastronomySection';
 import Profile from './profile/profile';
+import AguasDelPinar from './aguasPinar/aguasDelPinar';
 
 
 export default function App() {
@@ -25,6 +26,7 @@ export default function App() {
       <Route path='hospedaje' element={<LodgingSection/>}></Route>
       <Route path='contacto' element={<Contact/>}></Route>
       <Route path='perfil' element={<Profile/>}></Route>
+      <Route path='aguasdelpinar' element={<AguasDelPinar/>}></Route>
     </Routes>
     </BrowserRouter>
   );

@@ -1,0 +1,91 @@
+/* Archivo: aguasDelPinar.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-size {
+    width: 100%;
+    height: 100px;
+}
+
+
+.container-green {
+    width: 100%;
+    background-color: #6AA58D;
+    padding: 20px; /* Ajuste de espacio interior */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Distribuye el contenido con espacio entre ellos */
+    align-items: center;
+    
+}
+
+
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: auto;
+    margin-left: 20px; /* Espacio a la izquierda del logo */
+}
+
+.texto {
+    white-space: pre-wrap; /* Mantiene los espacios y saltos de línea */
+    font-size: 23px; /* Tamaño de la fuente */
+    line-height: 1.5; /* Altura de línea para mejor legibilidad */
+    color:#ffff; /* Color del texto */
+    margin: 20px 0; /* Márgenes para separar el texto de otros elementos */
+}
+
+.bottonForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Alinea el contenido a la derecha */
+    align-items: center;
+    width: 100%;
+    margin-top: auto; /* Alinea el botón al fondo del contenedor */
+    padding: 20px; /* Añade espacio alrededor del botón */
+    width: 20%;
+}
+
+.logo-text img {
+    width: 30%;
+}
+
+.ticket {
+    width: 30%; /* Ajusta el ancho de la imagen al del contenedor */
+    max-width: 200px; /* Ancho máximo para la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-bottom: 20px; /* Espacio entre la imagen y el botón */
+}
+
+.bottonForm button {
+    padding: 20px 40px !important ; /* Añade espacio interno al botón */
+    background-color: #fff !important;
+    border: none;
+    border-radius: 5px;
+    color: #6AA58D !important ;
+    font-weight: bold;
+    font-size: 25px !important ;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bottonForm button:hover {
+    background-color: #5b927e; /* Cambia el color de fondo al pasar el mouse */
+}
+
+.logo-img {
+    width: 150px; /* Ajusta el tamaño de la imagen del logo */
+    height: auto;
+    margin-bottom: 20px; /* Espacio entre el logo y el texto */
+}
+
+
+
+
+

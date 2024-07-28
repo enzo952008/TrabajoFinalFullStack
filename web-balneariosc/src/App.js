@@ -13,6 +13,7 @@ import Profile from './profile/profile';
 import TicketBooking from './components/ticket-component';
 import TicketsSection from './AguasDelPinar/ticket';
 import TicketSelector from './components/ticket-selector-component';
+import AguasDelPinar from './aguasPinar/aguasDelPinar';
 
 
 export default function App() {
@@ -29,6 +30,7 @@ export default function App() {
       <Route path='contacto' element={<Contact/>}></Route>
       <Route path='perfil' element={<Profile/>}></Route>
       <Route path='tickets' element={<TicketsSection/>}></Route>
+      <Route path='aguasdelpinar' element={<AguasDelPinar/>}></Route>
     </Routes>
     </BrowserRouter>
   );

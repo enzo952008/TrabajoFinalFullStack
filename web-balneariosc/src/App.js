@@ -11,7 +11,7 @@ import Contact from './contacto/contact';
 import GastronomySection from './gastronomy/gastronomySection';
 import Profile from './profile/profile';
 import TicketBooking from './components/ticket-component';
-import TicketsSection from './AguasDelPinar/ticket';
+import TicketsSection from './aguasPinar/ticket';
 import TicketSelector from './components/ticket-selector-component';
 import AguasDelPinar from './aguasPinar/aguasDelPinar';
 

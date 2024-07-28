@@ -12,6 +12,7 @@ import '../styles/home.css'
 import LodgingSection from '../lodging/lodgingSection';
 import GastronomySection from '../gastronomy/gastronomySection';
 import Profile from '../profile/profile';
+import AguasDelPinar from '../aguasPinar/aguasDelPinar';
 
 
 
@@ -24,7 +25,7 @@ class Home extends React.Component {
                     <Route path="/clima" component={Windguru} />
                     <Route path="/hospedaje" component={LodgingSection} />
                     <Route path="/gastronomia" component={GastronomySection} />
-                    {/* <Route path="/aguasdelpinar" component={AguasDelPinar} /> */}
+                    <Route path="/aguasdelpinar" component={AguasDelPinar} />
                     <Route path="/contacto" component={Contact} />
                      <Route path="/perfil" component={Profile} />
                     <Route path="/login" component={Login} /> 

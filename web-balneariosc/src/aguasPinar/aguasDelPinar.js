@@ -5,9 +5,17 @@ import CarouselAguasP from "../components/carouselAguas-component";
 import '../styles/aguasDelPinar.css' ;
 import logo from "./carouselAgua/img/logoaguas.png" ;
 import ticketimg from "./carouselAgua/img/tickets.png"
+import { useNavigate } from "react-router-dom";
 
 
 const AguasDelPinar = () => {
+    const navigate = useNavigate()
+    
+    const handleTickets = (e) => {
+        e.preventDefault();
+        //navega al form de creacion de cuenta
+        navigate('/tickets');
+    };
     return (
         
             <div className="container-principal">
@@ -29,7 +37,7 @@ const AguasDelPinar = () => {
 
                     <div className="bottonForm">
                         <img src= {ticketimg} alt="Imagen ticket" className="ticket" />
-                        <button>¡Compra tu entrada!</button>
+                        <button type="button" onClick={handleTickets}>¡Compra tu entrada!</button>
                     </div>
                 </div>
                 <Footer /> 

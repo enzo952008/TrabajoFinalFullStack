@@ -12,6 +12,8 @@ import '../styles/home.css'
 import LodgingSection from '../lodging/lodgingSection';
 import GastronomySection from '../gastronomy/gastronomySection';
 import Profile from '../profile/profile';
+import TicketsSection from '../aguasPinar/ticket';
+
 import AguasDelPinar from '../aguasPinar/aguasDelPinar';
 
 
@@ -32,7 +34,7 @@ class Home extends React.Component {
                 </Routes>
                 <Carousel />
                 <DescriptionTourist/>
-                <TouristAttractions/>
+                //<TouristAttractions/>
                 <Footer />
             </div>
         );

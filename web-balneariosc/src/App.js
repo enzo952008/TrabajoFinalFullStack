@@ -10,6 +10,7 @@ import LodgingSection from './lodging/lodgingSection';
 import Contact from './contacto/contact';
 import GastronomySection from './gastronomy/gastronomySection';
 import Profile from './profile/profile';
+import TicketsSection from './aguasPinar/ticket';
 import AguasDelPinar from './aguasPinar/aguasDelPinar';
 
 
@@ -22,10 +23,11 @@ export default function App() {
       <Route path='clima' element={<Windguru/>}></Route>
       <Route index element={<Home/>}></Route>
       <Route path='login' element={<Login/>}></Route>
-      <Route path='create-account' element={<CreateAccount/>}></Route>
+      <Route path='crear-cuenta' element={<CreateAccount/>}></Route>
       <Route path='hospedaje' element={<LodgingSection/>}></Route>
       <Route path='contacto' element={<Contact/>}></Route>
       <Route path='perfil' element={<Profile/>}></Route>
+      <Route path='tickets' element={<TicketsSection/>}></Route>
       <Route path='aguasdelpinar' element={<AguasDelPinar/>}></Route>
     </Routes>
     </BrowserRouter>

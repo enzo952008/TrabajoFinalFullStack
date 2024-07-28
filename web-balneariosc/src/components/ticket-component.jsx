@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import TicketSelector from './ticket-selector-component';
 import '../styles/ticket.css';
 
@@ -10,8 +9,7 @@ const TicketBooking = () => {
   const [selectedDate, setSelectedDate] = useState(null);
   const [dates, setDates] = useState([]);
   const [modalIsOpen, setModalIsOpen] = useState(false); // Estado del modal
-  const navigate = useNavigate(); // Hook de navegación de react-router-dom
-
+  
   useEffect(() => {
     const today = new Date();
     const currentDay = today.getDay();

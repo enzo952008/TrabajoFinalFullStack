@@ -11,6 +11,8 @@ import Contact from './contacto/contact';
 import GastronomySection from './gastronomy/gastronomySection';
 import Profile from './profile/profile';
 import TicketBooking from './components/ticket-component';
+import TicketsSection from './AguasDelPinar/ticket';
+import TicketSelector from './components/ticket-selector-component';
 
 
 export default function App() {
@@ -26,7 +28,7 @@ export default function App() {
       <Route path='hospedaje' element={<LodgingSection/>}></Route>
       <Route path='contacto' element={<Contact/>}></Route>
       <Route path='perfil' element={<Profile/>}></Route>
-      <Route path='tickets' element={<TicketBooking/>}></Route>
+      <Route path='tickets' element={<TicketsSection/>}></Route>
     </Routes>
     </BrowserRouter>
   );

@@ -21,7 +21,7 @@ const FormLogin = () => {
     const handleCreateAccount = (e) => {
         e.preventDefault();
         //navega al form de creacion de cuenta
-        navigate('/create-account');
+        navigate('/crear-cuenta');
     };
 
     return (

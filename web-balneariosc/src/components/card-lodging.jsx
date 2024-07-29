@@ -28,7 +28,7 @@ function CardLodging({ hospedaje }) {
           <Modal.Header closeButton>
             <Modal.Title>{hospedaje.Nombre}</Modal.Title>
           </Modal.Header>
-          <Modal.Body>
+          <Modal.Body className="modal-body-content">
             <h6>Descripción</h6>
             {lines}
           </Modal.Body>

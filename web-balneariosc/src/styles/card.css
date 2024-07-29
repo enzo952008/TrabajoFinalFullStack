@@ -1,50 +1,59 @@
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  
-  .card {
-    flex-basis: calc(20% - 2%); /* Calcula el ancho de cada tarjeta (20% del contenedor menos los márgenes) */
-    margin: 5px;
-    padding: 1em;
-    background-color: #FFF8DE;
-  }
-  
-  .card img {
-    height: 150px;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px); 
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  card-title {
-    color: #004500 !important;
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
-  }
+.card {
+  flex-basis: calc(20% - 2%); /* Calcula el ancho de cada tarjeta (20% del contenedor menos los márgenes) */
+  margin: 5px;
+  padding: 1em;
+  background-color: #FFF8DE;
+}
 
-  .card-body {
-    display: flex;
-    flex-direction: column;
-  }
+.card img {
+  height: 150px;
+}
 
-  .custom-button {
-    margin-top: auto;
-    align-self: flex-start;
-  }
+.card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
 
-  button {
-    padding: 5px 10px !important;
-    color:#FFF8DE !important;
-    cursor: pointer !important;
-    background-color: #004500 !important;
-    border-radius: 10px !important;
-    border-color: #004500 !important;
-  }
+card-title {
+  color: #004500 !important;
 
-  .custom-modal .modal-content {
-    background-color: #FFF8DE;
-    color:rgb(27, 27, 27)
-  }
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-button {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+button {
+  padding: 5px 10px !important;
+  color:#FFF8DE !important;
+  cursor: pointer !important;
+  background-color: #004500 !important;
+  border-radius: 10px !important;
+  border-color: #004500 !important;
+}
+
+.custom-modal .modal-content {
+  background-color: #FFF8DE;
+  color:rgb(27, 27, 27)
+}
+
+.modal-content {
+  width: 200% !important;
+  max-height: 600px !important;
+}
+
+.modal-body-content {
+  overflow-y: auto;
+}

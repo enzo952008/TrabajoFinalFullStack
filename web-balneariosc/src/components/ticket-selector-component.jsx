@@ -38,7 +38,7 @@ const TicketSelector = ({ isOpen, closeModal, selectedDate }) => {
         <div>
             {isOpen && (
                 <div className="modal-overlay" onClick={closeModal}>
-                    <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                    <div className="modal-content-ticket" onClick={(e) => e.stopPropagation()}>
                         <h1>¡Seleccioná tus entradas!</h1>
                         {selectedDate && <h5>Fecha seleccionada: {formatDate(selectedDate)}</h5>}
                         <h6>Ingresá la cantidad de entradas</h6>

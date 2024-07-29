@@ -24,7 +24,8 @@ function CardGastronomy({ gastronomia }) {
             Ver detalles
           </Button>
   
-          <Modal show={showModal} onHide={closeModal} centered>
+          <Modal show={showModal} onHide={closeModal} centered
+          className='custom-modal'>
             <Modal.Header closeButton>
               <Modal.Title>{gastronomia.nombre}</Modal.Title>
             </Modal.Header>

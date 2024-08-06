@@ -1,8 +1,7 @@
 .header {
-    color: #568773 !important;
+    color: white;
     text-align: left;
-    margin-left: 50px;
-    margin-right: 50px; /* Ajusta según sea necesario */
+    width: 100%;
     padding: 20px 0;
     background: rgba(255, 255, 255, 0.2); /* Más oscuro con menor opacidad */
 }
@@ -11,10 +10,15 @@
     text-align: left;
     color: #568773;
     font-size: 54px;
-    margin: 0;
+}
+
+.header h1 {
+  margin-left: 50px;
+  color: white;
 }
 
 .header p {
+    margin-left: 50px !important ;
     font-size: 35px;
     margin: 5px 0 0;
 }

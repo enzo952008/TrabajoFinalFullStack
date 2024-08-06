@@ -12,9 +12,6 @@ import '../styles/home.css'
 import LodgingSection from '../lodging/lodgingSection';
 import GastronomySection from '../gastronomy/gastronomySection';
 import Profile from '../profile/profile';
-import TicketsSection from '../aguasPinar/ticket';
-import TicketsSection from '../AguasDelPinar/ticket';
-
 import AguasDelPinar from '../aguasPinar/aguasDelPinar';
 import TicketBooking from '../components/ticket-component';
 
@@ -35,7 +32,6 @@ class Home extends React.Component {
                     <Route path="/login" component={Login} /> 
                 </Routes>
                 <Carousel />
-                <TicketBooking/>
                 <DescriptionTourist/>
                 //<TouristAttractions/>
                 <Footer />

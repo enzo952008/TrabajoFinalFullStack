@@ -15,7 +15,7 @@ const Carousel = () => {
         loop={true}
         pagination={{ clickable: true }}
         direction='horizontal'
-        className="swiper-container"
+        className="swiper-container-home"
       >
         <SwiperSlide className='slide-item'>
           <img src={require("../home/carousel/img/car-home-01.jpg")} alt="vista aérea del Balneario San Cayetano" />

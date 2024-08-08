@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #f9f9f9; /* Fondo opcional para mejor visualización */
+    background-color: #ffffff;; /* Color de fondo más claro */ /* Fondo opcional para mejor visualización */
     border: 1px solid #ddd; /* Borde opcional para mejor visualización */
     border-radius: 8px; /* Esquinas redondeadas opcionales */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional para mejor visualización */
@@ -12,10 +12,13 @@
 
 .text-content {
     flex: 1; /* Permite que el texto ocupe todo el espacio disponible */
+    margin-left: 10px;
     max-width: 100%; /* Establece un ancho máximo para el texto */
     margin-bottom: 20px; /* Espaciado entre el texto y la imagen */
     font-size: 22px; /* Ajusta el tamaño del texto según tus necesidades */
     color: #333; /* Color del texto */
+    text-align: justify; /* Justifica el texto */
+    text-align-last: center; /* Alinea la última línea del texto al centro */
 }
 
 .image-content img {
@@ -41,4 +44,5 @@
         height: 310px; /* Altura específica para la imagen en pantallas más grandes */
     }
 }
+
 

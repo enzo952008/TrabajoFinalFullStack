@@ -13,6 +13,7 @@ import LodgingSection from '../lodging/lodgingSection';
 import GastronomySection from '../gastronomy/gastronomySection';
 import Profile from '../profile/profile';
 import AguasDelPinar from '../aguasPinar/aguasDelPinar';
+import TicketBooking from '../components/ticket-component';
 
 
 

@@ -48,7 +48,7 @@ const TicketBooking = () => {
   return (
     <div className="ticket-booking">
       <div className="header">
-        <h2>Días y horarios:</h2>
+        <h1>Días y horarios:</h1>
         <p>Martes a Domingos de 11:00 a 19:00 hs</p>
       </div>
       <div className="content-container">

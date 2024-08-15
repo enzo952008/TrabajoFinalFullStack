@@ -13,7 +13,7 @@ body {
     align-items: center;
     background-color: #FFF8DE;
     padding: 13px; /* Incrementa el padding para agrandar la navbar */
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .navbar a {
@@ -22,12 +22,12 @@ body {
 
 .navbar img.logobalneario {
     height: 60px; /* Incrementa el tamaño del logobalneario */
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 
 .navbar img.logoprofile {
     height: 30px; /* Reduce el tamaño del logoprofile */
-    margin-left: 20px; /* Añade un margen a la izquierda si es necesario */
+    /* margin-left: 20px; Añade un margen a la izquierda si es necesario */
 }
 
 .menu-links {
@@ -40,7 +40,7 @@ body {
     text-decoration: none;
     padding: 14px 20px;
     text-align: center;
-    margin-right: 10px;
+    
 }
 
 .navbar a:hover {
@@ -53,7 +53,7 @@ body {
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1210px) {
     .menu-links {
         display: none;
         flex-direction: column;
@@ -76,5 +76,3 @@ body {
         display: block;
     }
 }
-
-

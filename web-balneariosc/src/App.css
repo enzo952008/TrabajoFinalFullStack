@@ -16,7 +16,6 @@ body {
 
 .navbar img.logobalneario {
   height: 70px; /* Ajusta la altura del logo del balneario */
-  margin-right: 30px;
 }
 
 .logoprofile {
@@ -26,6 +25,15 @@ body {
 .menu-links {
   display: flex;
   align-items: center;
+  justify-content: center; /* Asegura que los enlaces estén centrados en la navbar */
+  flex-grow: 1; /* Permite que el contenedor de enlaces ocupe el espacio restante */
+  margin-right: 110px;
+}
+
+.menu-links a {
+  display: flex;
+  justify-content: center; /* Centra el texto dentro del enlace */
+  align-items: center; /* Asegura que el texto esté centrado verticalmente */
 }
 
 .navbar a {
@@ -33,7 +41,7 @@ body {
   text-decoration: none;
   padding: 14px 20px;
   text-align: center;
-  margin-right: 10px;
+
   font-size: 28px;
 }
 
@@ -47,7 +55,7 @@ body {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1210px) {
   .menu-links {
     display: none;
     flex-direction: column;
@@ -58,7 +66,7 @@ body {
     margin: 0;
     padding: 10px;
     width: 100%;
-    text-align: left;
+    text-align: center;
     border-top: 1px solid #e0e0e0;
   }
 

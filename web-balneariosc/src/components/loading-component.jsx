@@ -1,14 +1,16 @@
-// // Loading.js
-// import React from 'react';
-// import '../styles/loading.css'; // Estilos opcionales para el loading
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-// const Loading = () => {
-//     return (
-//         <div className="loading-container">
-//             <div className="spinner"></div>
-//             <p>Cargando...</p>
-//         </div>
-//     );
-// };
+import React from 'react';
 
-// export default Loading;
+const Loading = () => {
+    return (
+        <div className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
+            <div className="spinner-border" role="status">
+                <span className="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    );
+};
+
+export default Loading;
+

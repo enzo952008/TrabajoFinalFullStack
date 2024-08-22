@@ -1,30 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /* TouristAttractions.css */
 
 .tourist-attractions-container {
     width: 100%;
-    padding: 20px;
     background-color: #f0f0f0;
     text-align: center;
+    
 }
 
 .tourist-title {
     font-size: 3em;
-    margin-bottom: 20px;
     color: #333;
-    text-align: center;
+    text-align: center; /* Centrado del texto dentro del contenedor */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    display: block; /* Asegura que el elemento se comporte como un bloque completo */
 }
+
+
 
 .carousel-and-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; /* Para asegurar que se comporten bien en pantallas pequeñas */
+    flex-wrap: wrap;
 }
 
-.tourist-swiper-container {
+.tourist-swiper-container,
+.side-image {
     height: 60vh;
-    width: 50%;
+    width: 45%;
+    display: flex;
+    justify-content: center; /* Centramos el contenido horizontalmente */
+    align-items: center;    /* Centramos el contenido verticalmente */
 }
 
 .tourist-slide-item {
@@ -49,7 +55,6 @@
 }
 
 .side-image {
-    width: 45%;
     cursor: pointer;
     transition: transform 0.3s ease, left 0.3s ease, top 0.3s ease;
 }
@@ -57,18 +62,16 @@
 .side-image img {
     width: 100%;
     height: 60vh;
-    object-fit: cover; /* Asegura que la imagen mantenga su proporción sin distorsionarse */
-    max-width: 1037px; /* Opcional: Limita el tamaño máximo si es necesario */
+    object-fit: cover;
+    max-width: 1037px;
 }
 
 .side-image img.enlarged {
-    transform: scale(1.5); /* Ajusta el valor de escala según tus necesidades */
-    z-index: 10; /* Asegúrate de que la imagen agrandada esté sobre otros elementos */
+    transform: scale(1.5);
+    z-index: 10;
     position: fixed;
     top: 50%;
     transform: translate(-50%, -50%) scale(1.5);
 }
 
-  
-  
   

@@ -18,7 +18,7 @@
     font-size: 22px; /* Ajusta el tamaño del texto según tus necesidades */
     color: #333; /* Color del texto */
     text-align: justify; /* Justifica el texto */
-    text-align-last: center; /* Alinea la última línea del texto al centro */
+    text-align-last: left; /* Alinea la última línea del texto al centro */
 }
 
 .image-content img {

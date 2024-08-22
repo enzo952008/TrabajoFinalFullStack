@@ -4,18 +4,15 @@
     width: 100%;
     background-color: #f0f0f0;
     text-align: center;
-    
 }
 
 .tourist-title {
     font-size: 3em;
     color: #333;
-    text-align: center; /* Centrado del texto dentro del contenedor */
-    width: 100%; /* Ocupa todo el ancho del contenedor */
-    display: block; /* Asegura que el elemento se comporte como un bloque completo */
+    text-align: center;
+    width: 100%;
+    display: block;
 }
-
-
 
 .carousel-and-image {
     display: flex;
@@ -29,8 +26,8 @@
     height: 60vh;
     width: 45%;
     display: flex;
-    justify-content: center; /* Centramos el contenido horizontalmente */
-    align-items: center;    /* Centramos el contenido verticalmente */
+    justify-content: center;
+    align-items: center;
 }
 
 .tourist-slide-item {
@@ -55,6 +52,7 @@
 }
 
 .side-image {
+    padding-right: 4%;
     cursor: pointer;
     transition: transform 0.3s ease, left 0.3s ease, top 0.3s ease;
 }
@@ -73,5 +71,29 @@
     top: 50%;
     transform: translate(-50%, -50%) scale(1.5);
 }
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .carousel-and-image {
+        flex-direction: column;
+        padding: 0 5%;
+    }
+
+    .tourist-swiper-container,
+    .side-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .side-image {
+        padding-right: 0; /* Elimina el padding en pantallas pequeñas */
+        padding-bottom: 20px; /* Añade espacio entre el carrusel y la imagen lateral */
+    }
+
+    .tourist-title {
+        font-size: 2.5em; /* Ajusta el tamaño del texto en pantallas más pequeñas */
+    }
+}
+
 
   

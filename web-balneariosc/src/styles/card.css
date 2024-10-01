@@ -33,9 +33,6 @@ card-title {
 .custom-button {
   margin-top: auto;
   align-self: flex-start;
-}
-
-button {
   padding: 5px 10px !important;
   color:#FFF8DE !important;
   cursor: pointer !important;
@@ -43,6 +40,15 @@ button {
   border-radius: 10px !important;
   border-color: #004500 !important;
 }
+
+/* button {
+  padding: 5px 10px !important;
+  color:#FFF8DE !important;
+  cursor: pointer !important;
+  background-color: #004500 !important;
+  border-radius: 10px !important;
+  border-color: #004500 !important;
+} */
 
 .custom-modal .modal-content {
   background-color: #FFF8DE;

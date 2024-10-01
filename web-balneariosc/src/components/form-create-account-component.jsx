@@ -6,7 +6,6 @@ const FormCreateAccount = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
-    const [profileImg, setProfileImg] = useState(null);
 
     const handleRegister = (e) => {
         e.preventDefault();
@@ -17,15 +16,11 @@ const FormCreateAccount = () => {
         console.log("Nombre:", name);
         console.log("Correo electrónico:", email);
         console.log("Contraseña:", password);
-        console.log("Imagen de Perfil:", profileImg);
     };
 
-    const handleProfileImgChange = (e) => {
-        setProfileImg(e.target.files[0]);
-    };
 
     return (
-        <form className="form-container" onSubmit={handleRegister}>
+        <form className="form-container-register" onSubmit={handleRegister}>
             <div className="form-title">
                 <h3>Crea tu cuenta</h3>
             </div>
@@ -69,16 +64,8 @@ const FormCreateAccount = () => {
                     required
                 />
             </div>
-            <div className="form-group">
-                <label htmlFor="profileImg" className="file-label">Imagen de perfil</label>
-                <input
-                    type="file"
-                    id="profileImg"
-                    onChange={handleProfileImgChange}
-                />
-            </div>
             <div className="form-buttons">
-                <button type="submit">Registrarse</button>
+                <button type="submit" className="register-button">Registrarse</button>
             </div>
         </form>
     );

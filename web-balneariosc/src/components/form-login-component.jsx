@@ -25,9 +25,9 @@ const FormLogin = () => {
     };
 
     return (
-        <form className="form-container">
+        <form className="form-container-login">
             <div className="form-title">
-                <h3>¡Bienvenido/a!</h3>
+                <h3>¡Te damos la bienvenida!</h3>
             </div>
             <div className="form-group">
                 <label htmlFor="email">Correo electrónico</label>
@@ -50,8 +50,8 @@ const FormLogin = () => {
                 />
             </div>
             <div className="form-buttons">
-                <button type="button" onClick={handleCreateAccount}>Crear cuenta</button>
-                <button type="submit" onClick={handleLogin}>Ingresar</button>
+                <button type="button" onClick={handleCreateAccount} className="create-account-button">Crear cuenta</button>
+                <button type="submit" onClick={handleLogin} className="login-button">Ingresar</button>
             </div>
         </form>
     );

@@ -2,7 +2,6 @@ import React from 'react';
 import Windguru from '../components/Windguru-component';
 import NavBar from '../components/navBar-component';
 import Carousel from '../components/Carousel-component';
-import DescriptionTourist from '../components/description-component';
 import TouristAttractions from '../components/TouristAttractions-component';
 import Footer from '../components/footer-component'; 
 import Login from '../login/login';
@@ -13,7 +12,7 @@ import LodgingSection from '../lodging/lodgingSection';
 import GastronomySection from '../gastronomy/gastronomySection';
 import Profile from '../profile/profile';
 import AguasDelPinar from '../aguasPinar/aguasDelPinar';
-import TicketBooking from '../components/ticket-component';
+
 
 
 
@@ -32,7 +31,6 @@ class Home extends React.Component {
                     <Route path="/login" component={Login} /> 
                 </Routes>
                 <Carousel />
-                <DescriptionTourist/>
                 <TouristAttractions/>
                 <Footer />
             </div>

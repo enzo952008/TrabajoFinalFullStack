@@ -93,6 +93,22 @@
     text-align: left;
     font-size: 1.2em; /* Aumentar el tamaño de la fuente */
   }
+  .tariff-table {
+    width: 100%; /* La tabla ocupa todo el ancho disponible del contenedor */
+    border-collapse: collapse; /* Colapsa bordes para un diseño más limpio */
+    
+  }
+  
+  .tariff-table td {
+    padding: 8px 12px; /* Espaciado dentro de las celdas */
+    border-bottom: 1px solid #ccc; /* Línea divisoria entre filas */
+    text-align: left; /* Alinea el texto a la izquierda en la primera columna */
+    background-color: white;
+  }
+  
+  .tariff-table td:last-child {
+    text-align: right; /* Alinea el texto a la derecha en la segunda columna */
+  }
   
   /* Responsive design */
   @media (max-width: 1200px) {

@@ -1,5 +1,3 @@
-/* TouristAttractions.css */
-
 .tourist-attractions-container {
     width: 100%;
     background-color: #f0f0f0;
@@ -9,7 +7,8 @@
 .tourist-title {
     font-size: 3em;
     color: #333;
-    text-align: center;
+    text-align: center; /* Centra el título horizontalmente */
+    padding-top: 15px; /* Agrega 15px de espacio al texto */
     width: 100%;
     display: block;
 }
@@ -18,7 +17,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .tourist-swiper-container,
@@ -28,6 +26,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative; /* Permite usar 'bottom' */
+    bottom: 10px; /* Desliza el contenido 10px hacia arriba */
 }
 
 .tourist-slide-item {
@@ -52,7 +52,7 @@
 }
 
 .side-image {
-    padding-right: 4%;
+    margin-right: 3.3%;
     cursor: pointer;
     transition: transform 0.3s ease, left 0.3s ease, top 0.3s ease;
 }
@@ -88,12 +88,10 @@
     .side-image {
         padding-right: 0; /* Elimina el padding en pantallas pequeñas */
         padding-bottom: 20px; /* Añade espacio entre el carrusel y la imagen lateral */
+        margin-left: 0; /* Elimina el margen a la izquierda en pantallas pequeñas */
     }
 
     .tourist-title {
         font-size: 2.5em; /* Ajusta el tamaño del texto en pantallas más pequeñas */
     }
 }
-
-
-  

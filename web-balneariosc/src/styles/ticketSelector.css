@@ -63,7 +63,7 @@
 
 .modal-buttons {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin-top: 10px;
 }
 
@@ -75,8 +75,14 @@
     cursor: pointer;
 }
 
+.modal-buttons button:hover {
+    transform: scale(1.05); /* Aplica el zoom al hacer hover */
+  }
+
 .cancel-button {
-    background: #6AA58D !important;
+    background: none !important;
+    color: rgb(59, 58, 58) !important;
+    margin-right: 1% !important;
 }
 
 .next-button {

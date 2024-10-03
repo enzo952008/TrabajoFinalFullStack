@@ -1,5 +1,5 @@
 /* FormLogin.css */
-.form-container {
+.form-container-login {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,6 +9,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     width: 100%;
+    height: 21rem;
     margin: 20px;
 }
 
@@ -29,25 +30,61 @@
     box-sizing: border-box;
 }
 
-.form-buttons {
+form .form-buttons {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end; /* Alinea los botones hacia la derecha */
+    margin-right: 1%; /* Espacio entre los botones */
     width: 100%;
+    margin-top: auto; /* Empuja los botones al final del formulario */
 }
 
-.form-buttons button {
+.form-buttons button:hover {
+    transform: scale(1.05);
+}
+
+.login-button {
     padding: 10px 20px;
     color:#FFF8DE;
     cursor: pointer;
     background-color: #004500;
     border-radius: 10px;
+    border:none;
+}
+
+.form-buttons .create-account-button {
+    background: none;
+    text-decoration: none;
+    color: rgb(59, 58, 58);
+    padding: 10px 20px;
+    border: none;
 }
 
 .form-buttons button:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .form-title {
     color: #004500;
     padding-bottom: 5%;
+}
+
+/* register form */
+
+.form-container-register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFF8DE;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    height: 32rem;
+    margin: 20px;
+
+}
+
+.form-buttons .register-button {
+    border: none;
 }

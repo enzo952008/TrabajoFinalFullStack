@@ -6,11 +6,14 @@
 
 .tourist-title {
     font-size: 3em;
-    color: #333;
+    color: #004500;
     text-align: center; /* Centra el título horizontalmente */
-    padding-top: 15px; /* Agrega 15px de espacio al texto */
+    padding-top: 15px;
+    padding-bottom:15px;
     width: 100%;
     display: block;
+    font-size: 3.5em;
+    font-family: 'Kaushan Script', cursive;
 }
 
 .carousel-and-image {
@@ -89,9 +92,5 @@
         padding-right: 0; /* Elimina el padding en pantallas pequeñas */
         padding-bottom: 20px; /* Añade espacio entre el carrusel y la imagen lateral */
         margin-left: 0; /* Elimina el margen a la izquierda en pantallas pequeñas */
-    }
-
-    .tourist-title {
-        font-size: 2.5em; /* Ajusta el tamaño del texto en pantallas más pequeñas */
     }
 }

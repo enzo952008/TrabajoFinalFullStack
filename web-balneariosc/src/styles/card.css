@@ -1,18 +1,22 @@
 .card-container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  justify-content: space-around;
+  align-items: flex-start;
 }
 
 .card {
-  flex-basis: calc(20% - 2%); /* Calcula el ancho de cada tarjeta (20% del contenedor menos los márgenes) */
-  margin: 5px;
-  padding: 1em;
+  flex-basis: calc(30% - 2%); /* Ancho de cada tarjeta (30% del contenedor menos los márgenes) */
+  margin: 1%;
   background-color: #FFF8DE;
+  height: 25rem;
+  align-items: flex-start;
 }
 
 .card img {
-  height: 150px;
+  height: 250px; /* Ajusta la altura deseada */
+  width: 100%; /* Cambiado a 100% para ocupar todo el ancho de la tarjeta */
+  object-fit: cover; /* Asegura que la imagen mantenga la proporción */
 }
 
 .card:hover {
@@ -20,9 +24,8 @@
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-card-title {
+.card-title {
   color: #004500 !important;
-
 }
 
 .card-body {
@@ -34,25 +37,16 @@ card-title {
   margin-top: auto;
   align-self: flex-start;
   padding: 5px 10px !important;
-  color:#FFF8DE !important;
+  color: #FFF8DE !important;
   cursor: pointer !important;
   background-color: #004500 !important;
   border-radius: 10px !important;
   border-color: #004500 !important;
 }
 
-/* button {
-  padding: 5px 10px !important;
-  color:#FFF8DE !important;
-  cursor: pointer !important;
-  background-color: #004500 !important;
-  border-radius: 10px !important;
-  border-color: #004500 !important;
-} */
-
 .custom-modal .modal-content {
   background-color: #FFF8DE;
-  color:rgb(27, 27, 27)
+  color: rgb(27, 27, 27);
 }
 
 .modal-content {

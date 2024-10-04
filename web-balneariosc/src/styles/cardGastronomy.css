@@ -1,8 +1,16 @@
-
+h2.titleGastronomy{
+    display: flex;
+    justify-content: center;
+    color: #004500;
+    font-size: 3.5em;
+    font-family: 'Kaushan Script', cursive;
+    margin-bottom: 40px;
+}
 .card-gastronomy {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    height: auto;
 }
 
 .card-gastronomy-body {
@@ -24,7 +32,6 @@
     margin: 0 15px;  
     border: none;
     border-radius: 10px; 
-    background-color: #007BFF;
     color: white;
     font-size: 18px; 
     font-weight: bold;  
@@ -33,6 +40,7 @@
     height: 60px;      
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
+
 
 .card-gastronomy-button-container button.active {
     background-color: #0056b3;
@@ -51,6 +59,9 @@
     align-items: center;
     margin-top: 20px;
 }
+.custom-modal{
+    height: auto;
+}
 
 .custom-modal .modal-content {
     background-color: #FFF8DE;
@@ -61,3 +72,37 @@
     width: 200% !important;
     max-height: 600px !important;
   }
+
+  img.modal-image-header {
+    object-fit: cover;
+    width: 80%; /* Ajusta el ancho de la imagen en el header según lo necesites */
+    max-height: 20rem; /* Cambia a 'auto' para mantener la proporción */
+    border-radius: 5px; /* Opcional: agrega bordes redondeados */
+    margin-right: 10px; /* Espacio entre la imagen y el título */
+}
+
+.close-button {
+    position: absolute; /* Posiciona la cruz de cerrar de forma absoluta */
+    top: 10px; /* Ajusta la posición superior */
+    right: 10px; /* Ajusta la posición derecha */
+    z-index: 2; /* Asegura que esté por encima del overlay y la imagen */
+    color: #FFF8DE !important;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.0,5); /* Overlay negro con 50% de opacidad */
+    z-index: 1; /* Asegura que el overlay esté por debajo del título pero por encima de la imagen */
+    border-radius: 5px; /* Asegura que el overlay tenga bordes redondeados */
+}
+
+.modal-title {
+    position: absolute; /* Permite superponer el título */
+    bottom: 20px; /* Ajusta según sea necesario para que quede al final de la imagen */
+    left: 20px; /* Ajusta según sea necesario */
+    color: #FFF8DE; /* Color del texto del título */
+    z-index: 2; /* Asegura que el título esté por encima del overlay */
+}

@@ -4,15 +4,19 @@ import Gastronomy from "./gastronomy";
 import Footer from "../components/footer-component";
 import '../styles/gastronomySection.css';
 
-const GastronomySection= () => {
+const GastronomySection = () => {
     return (
         <div className="page-container-gastronomy">
-            <NavBar/>
-            <div className="content-wrap-gastronomy">
-                <Gastronomy/>
+            <NavBar />
+            <div className="page-background">
+                <div className="overlay"></div> {/* Overlay negro */}
+                <div className="content-wrap-gastronomy">
+                    <Gastronomy />
+                </div>
             </div>
-           <Footer/>
+            <Footer />
         </div>
-    )
+    );
 }
+
 export default GastronomySection;

@@ -35,9 +35,11 @@ function CardGastronomy({ gastronomia }) {
                         <Button variant="close" onClick={closeModal} className="close-button" />
                         <h5 className="modal-title">{gastronomia.nombre}</h5>
                     </div>
-                    <Modal.Body>
-                        <h6>Descripción</h6>
-                        {lines}
+                    <Modal.Body className="modal-body">
+                        <h6 style={{ textAlign: 'center' }}>Descripción</h6>
+                        <div className="description-container">
+                            {lines}
+                        </div>
                     </Modal.Body>
                     <Modal.Footer>
                         <Button variant="secondary" onClick={closeModal} className="custom-button">

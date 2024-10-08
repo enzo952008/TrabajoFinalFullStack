@@ -1,4 +1,39 @@
-h2.titleGastronomy{
+.page-container-gastronomy {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative; /* Necesario para que el overlay se posicione correctamente */
+}
+
+.page-background {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH8_Jj2kGUSHgTcFy0iJNfA8qVRJJcuSnQkg&s');
+    background-size: cover;
+    height: 100%; /* Asegura que la imagen de fondo ocupe todo el contenedor */
+    position: relative; /* Necesario para el pseudo-elemento */
+}
+
+.overlay {
+    content: ''; /* Necesario para crear el pseudo-elemento */
+    position: absolute; /* Posiciona el overlay de manera absoluta */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.0,5); /* Overlay negro con 50% de opacidad */
+    z-index: 1; /* Asegura que el overlay esté por encima de la imagen de fondo */
+}
+
+.content-wrap-gastronomy {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Permite que el contenido esté por encima del overlay */
+    z-index: 2; /* Asegura que el contenido esté por encima del overlay */
+}
+
+.titleGastronomy {
     display: flex;
     justify-content: center;
     color: #004500;
@@ -6,6 +41,7 @@ h2.titleGastronomy{
     font-family: 'Kaushan Script', cursive;
     margin-bottom: 40px;
 }
+
 .card-gastronomy {
     display: flex;
     flex-direction: column;
@@ -41,7 +77,6 @@ h2.titleGastronomy{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
-
 .card-gastronomy-button-container button.active {
     background-color: #0056b3;
     transform: scale(1.05); 
@@ -59,21 +94,23 @@ h2.titleGastronomy{
     align-items: center;
     margin-top: 20px;
 }
-.custom-modal{
+
+.custom-modal {
     height: auto;
 }
 
 .custom-modal .modal-content {
     background-color: #FFF8DE;
-    color:rgb(27, 27, 27)
-  }
-  
-  .modal-content {
+    color: rgb(27, 27, 27);
+}
+
+.modal-content {
     width: 200% !important;
     max-height: 600px !important;
-  }
+    overflow-y: auto; /* Habilita el scroll vertical */
+}
 
-  img.modal-image-header {
+img.modal-image-header {
     object-fit: cover;
     width: 80%; /* Ajusta el ancho de la imagen en el header según lo necesites */
     max-height: 20rem; /* Cambia a 'auto' para mantener la proporción */
@@ -88,21 +125,13 @@ h2.titleGastronomy{
     z-index: 2; /* Asegura que esté por encima del overlay y la imagen */
     color: #FFF8DE !important;
 }
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.0,5); /* Overlay negro con 50% de opacidad */
-    z-index: 1; /* Asegura que el overlay esté por debajo del título pero por encima de la imagen */
-    border-radius: 5px; /* Asegura que el overlay tenga bordes redondeados */
-}
 
 .modal-title {
+    text-align: center; /* Centra el título del modal */
     position: absolute; /* Permite superponer el título */
     bottom: 20px; /* Ajusta según sea necesario para que quede al final de la imagen */
-    left: 20px; /* Ajusta según sea necesario */
+    left: 0;
+    right: 0; /* Asegura que el título esté centrado */
     color: #FFF8DE; /* Color del texto del título */
     z-index: 2; /* Asegura que el título esté por encima del overlay */
 }

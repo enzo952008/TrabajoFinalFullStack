@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import CardLodging from '../components/card-lodging';
+import '../styles/card-camping.css'
 
 function Camping() {
   const [lodgings, setLodgings] = useState([]);
@@ -22,9 +23,9 @@ function Camping() {
   }, []);
 
   return (
-    <div>
-      <h2>Campings</h2>
-      <div className='card-container'>
+    <div className='page-container-camping'>
+      <h2 className='lodgingTitle'>Campings</h2>
+      <div className='card-container-camping'>
         {lodgings.map(lodging => (
           <CardLodging key={lodging.id} hospedaje={lodging} />
         ))}

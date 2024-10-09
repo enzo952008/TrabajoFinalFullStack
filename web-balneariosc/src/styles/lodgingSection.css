@@ -7,12 +7,32 @@
     position: relative;
 }
 
+.component-container {
+    width: 100%;
+}
+
 .content-wrap-lodging {
     flex: 1;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.card {
+  flex-basis: calc(30% - 2%); /* Ancho de cada tarjeta (30% del contenedor menos los márgenes) */
+  margin: 1%;
+  background-color: #FFF8DE;
+  height: 25rem;
+  align-items: flex-start;
 }
 
 .button-container {
@@ -43,6 +63,28 @@
 }
 
 .button-container button:hover {
+    transform: scale(1.1);
+}
+
+.lodgingTitle {
+    display: flex;
+    justify-content: center;
+    color: #004500;
+    font-size: 3.5em;
+    font-family: 'Kaushan Script', cursive;
+    margin-bottom: 40px;
+}
+
+.back-link {
+    position: absolute; /* Permite que el botón se posicione de forma absoluta */
+    top: 2rem; /* Ajusta la distancia desde la parte superior */
+    left: 2rem; /* Ajusta la distancia desde la izquierda */
+    color: white; /* Cambia el color del texto según tu diseño */
+    z-index: 1; /* Asegúrate de que esté por encima de otros elementos */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+.back-link:hover{
     transform: scale(1.1);
 }
 

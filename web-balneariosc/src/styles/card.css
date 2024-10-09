@@ -44,16 +44,68 @@
   border-color: #004500 !important;
 }
 
-.custom-modal .modal-content {
-  background-color: #FFF8DE;
-  color: rgb(27, 27, 27);
+.modal-centered {
+  display: flex;
+  justify-content: center;  /* Centrar horizontalmente */
+  align-items: center;      /* Centrar verticalmente */
+  min-height: 100vh;        /* Ocupa toda la altura de la ventana */
 }
 
 .modal-content {
   width: 200% !important;
   max-height: 600px !important;
+  overflow-y: auto; /* Habilita el scroll vertical */
+  overflow-x:hidden;
+  scrollbar-width: thin; /* Scroll más fino */
+}
+
+.modal-content::-webkit-scrollbar {
+  width: 8px; /* Ancho del scrollbar */
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: #ccc; /* Color del scroll */
+  border-radius: 10px; /* Bordes redondeados para el scroll */
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: transparent; /* Fondo del track del scrollbar */
+}
+
+img.modal-image-header {
+  object-fit: cover;
+  width: 80%;
+  max-height: 20rem;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.modal-title {
+  text-align: left !important;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  color: #FFF8DE;
+  z-index: 2;
+}
+
+
+.custom-modal .modal-content {
+  background-color: #FFF8DE;
+  color: rgb(27, 27, 27);
 }
 
 .modal-body-content {
+  text-align: left !important;
   overflow-y: auto;
 }
+
+img.modal-image-header {
+  object-fit: cover;
+  width: 80%;
+  max-height: 20rem;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+

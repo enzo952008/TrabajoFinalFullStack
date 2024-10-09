@@ -14,6 +14,10 @@ function CardGastronomy({ gastronomia }) {
         <p key={index}>{line}</p>
     ));
 
+    const contactGastronomy = () => {
+        window.open(gastronomia.contactUrl, '_blank');
+    };
+
     return (
         <div className="card">
             <img src={gastronomia.imagen} alt={gastronomia.nombre} className="card-img-top" />
@@ -23,27 +27,25 @@ function CardGastronomy({ gastronomia }) {
                     Ver detalles
                 </Button>
 
-                <Modal show={showModal} onHide={closeModal} centered className='custom-modal'>
+                <Modal show={showModal} onHide={closeModal} centered dialogClassName='modal-centered' className='custom-modal'>
                     <div style={{ position: 'relative' }}>
-                        <img 
-                            src={gastronomia.imagen} 
-                            alt={gastronomia.nombre} 
-                            className="modal-image-header" 
-                            style={{ width: '100%', height: 'auto', borderRadius: '5px' }} 
+                        <img
+                            src={gastronomia.imagen}
+                            alt={gastronomia.nombre}
+                            className="modal-image-header"
+                            style={{ width: '100%', height: 'auto', borderRadius: '5px' }}
                         />
                         <div className="overlay"></div>
                         <Button variant="close" onClick={closeModal} className="close-button" />
                         <h5 className="modal-title">{gastronomia.nombre}</h5>
                     </div>
                     <Modal.Body className="modal-body">
-                        <h6 style={{ textAlign: 'center' }}>Descripción</h6>
-                        <div className="description-container">
-                            {lines}
-                        </div>
+                        <h6>Descripción</h6>
+                        {lines}
                     </Modal.Body>
                     <Modal.Footer>
-                        <Button variant="secondary" onClick={closeModal} className="custom-button">
-                            Cerrar
+                        <Button variant="secondary" onClick={contactGastronomy} className="custom-button">
+                            Contactar
                         </Button>
                     </Modal.Footer>
                 </Modal>

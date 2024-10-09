@@ -1,0 +1,16 @@
+.page-container-lodging {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('../home/carousel/img/car-home-02.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.card-container-camping {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+  

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import CardLodging from '../components/card-lodging';
 
+
 function Lodging() {
   //estado local para almacenar la data
   const [lodgings, setLodgings] = useState([]);

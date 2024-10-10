@@ -1,18 +1,22 @@
 .card-container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  justify-content: space-around;
+  align-items: flex-start;
 }
 
 .card {
-  flex-basis: calc(20% - 2%); /* Calcula el ancho de cada tarjeta (20% del contenedor menos los márgenes) */
-  margin: 5px;
-  padding: 1em;
+  flex-basis: calc(30% - 2%); /* Ancho de cada tarjeta (30% del contenedor menos los márgenes) */
+  margin: 1%;
   background-color: #FFF8DE;
+  height: 25rem;
+  align-items: flex-start;
 }
 
 .card img {
-  height: 150px;
+  height: 250px; /* Ajusta la altura deseada */
+  width: 100%; /* Cambiado a 100% para ocupar todo el ancho de la tarjeta */
+  object-fit: cover; /* Asegura que la imagen mantenga la proporción */
 }
 
 .card:hover {
@@ -20,9 +24,8 @@
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-card-title {
+.card-title {
   color: #004500 !important;
-
 }
 
 .card-body {
@@ -34,32 +37,83 @@ card-title {
   margin-top: auto;
   align-self: flex-start;
   padding: 5px 10px !important;
-  color:#FFF8DE !important;
+  color: #FFF8DE !important;
   cursor: pointer !important;
   background-color: #004500 !important;
   border-radius: 10px !important;
   border-color: #004500 !important;
 }
 
-/* button {
-  padding: 5px 10px !important;
-  color:#FFF8DE !important;
-  cursor: pointer !important;
-  background-color: #004500 !important;
-  border-radius: 10px !important;
-  border-color: #004500 !important;
-} */
-
-.custom-modal .modal-content {
-  background-color: #FFF8DE;
-  color:rgb(27, 27, 27)
+.modal-centered {
+  display: flex;
+  justify-content: center;  /* Centrar horizontalmente */
+  align-items: center;      /* Centrar verticalmente */
+  min-height: 100vh;        /* Ocupa toda la altura de la ventana */
 }
 
 .modal-content {
   width: 200% !important;
   max-height: 600px !important;
+  overflow-y: auto; /* Habilita el scroll vertical */
+  overflow-x:hidden;
+  scrollbar-width: thin; /* Scroll más fino */
+}
+
+.modal-content::-webkit-scrollbar {
+  width: 8px; /* Ancho del scrollbar */
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: #ccc; /* Color del scroll */
+  border-radius: 10px; /* Bordes redondeados para el scroll */
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: transparent; /* Fondo del track del scrollbar */
+}
+
+img.modal-image-header {
+  object-fit: cover;
+  width: 80%;
+  max-height: 20rem;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.modal-title {
+  text-align: left !important;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  color: #FFF8DE;
+  z-index: 2;
+}
+
+
+.custom-modal .modal-content {
+  background-color: #FFF8DE;
+  color: rgb(27, 27, 27);
 }
 
 .modal-body-content {
+  text-align: left !important;
   overflow-y: auto;
+}
+
+img.modal-image-header {
+  object-fit: cover;
+  width: 80%;
+  max-height: 20rem;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.btn-close {
+  filter: brightness(0) invert(1); /* Cambia el color del ícono a blanco */
+  opacity: 0.6;
+}
+
+.btn-close:hover {
+  opacity: 1;
 }

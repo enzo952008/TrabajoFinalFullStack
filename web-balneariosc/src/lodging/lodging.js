@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import CardLodging from '../components/card-lodging';
 
+
 function Lodging() {
   //estado local para almacenar la data
   const [lodgings, setLodgings] = useState([]);
@@ -28,7 +29,7 @@ function Lodging() {
 
   return (
     <div>
-      <h2>Alojamientos</h2>
+      <h2 className='lodgingTitle'>Alojamientos</h2>
       <div className='card-container'>
         {/* se recorre el array se genera un componente card por cada hospedaje, usando el id como clave */}
         {lodgings.map(lodging => (

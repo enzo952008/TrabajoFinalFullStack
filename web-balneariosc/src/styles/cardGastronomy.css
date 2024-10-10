@@ -1,63 +1,138 @@
-
-.card-gastronomy {
+/* Fondo, layout y card general */
+.page-container-gastronomy {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    position: relative;
 }
 
-.card-gastronomy-body {
+.page-background {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH8_Jj2kGUSHgTcFy0iJNfA8qVRJJcuSnQkg&s');
+    background-size: cover;
+    height: 100%;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.0,5);
+    z-index: 1;
+}
+
+.content-wrap-gastronomy {
     flex: 1;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 
-.card-gastronomy-button-container {
+/* Título */
+.titleGastronomy {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    color: #004500;
+    font-size: 3.5em;
+    font-family: 'Kaushan Script', cursive;
+    margin-bottom: 40px;
 }
 
-.card-gastronomy-button-container button {
-    padding: 15px 40px;
-    margin: 0 15px;  
-    border: none;
-    border-radius: 10px; 
-    background-color: #007BFF;
-    color: white;
-    font-size: 18px; 
-    font-weight: bold;  
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease; 
-    height: 60px;      
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-}
+/* Modal general */
 
-.card-gastronomy-button-container button.active {
-    background-color: #0056b3;
-    transform: scale(1.05); 
-}
-
-.card-gastronomy-button-container button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
-}
-
-.card-gastronomy-component-container {
-    width: 100%;
+.modal-centered {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+    justify-content: center;  /* Centrar horizontalmente */
+    align-items: center;      /* Centrar verticalmente */
+    min-height: 100vh;        /* Ocupa toda la altura de la ventana */
+}
+
+.custom-modal {
+    height: auto;
 }
 
 .custom-modal .modal-content {
     background-color: #FFF8DE;
-    color:rgb(27, 27, 27)
-  }
-  
-  .modal-content {
+    color: rgb(27, 27, 27);
+}
+
+.modal-content {
     width: 200% !important;
     max-height: 600px !important;
-  }
+    overflow-y: auto; /* Habilita el scroll vertical */
+    overflow-x: hidden;
+    scrollbar-width: thin; /* Scroll más fino */
+}
+
+/* Scrollbar personalizado para navegadores Webkit (Chrome, Safari) */
+.modal-content::-webkit-scrollbar {
+    width: 8px; /* Ancho del scrollbar */
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background-color: #ccc; /* Color del scroll */
+    border-radius: 10px; /* Bordes redondeados para el scroll */
+}
+
+.modal-content::-webkit-scrollbar-track {
+    background: transparent; /* Fondo del track del scrollbar */
+}
+
+/* Imagen del header en el modal */
+img.modal-image-header {
+    object-fit: cover;
+    width: 80%;
+    max-height: 20rem;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* Botón de cerrar con color blanco */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+    color: #ffffff !important; /* Color blanco para el botón de cerrar */
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem; /* Ajuste de tamaño */
+    cursor: pointer;
+    padding: 0;
+}
+
+.close-button:hover {
+    color: #ccc !important; /* Color más claro en hover */
+}
+
+/* Título dentro del modal */
+.modal-title {
+    text-align: left !important;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    color: #FFF8DE;
+    z-index: 2;
+}
+
+/* Descripción */
+.modal-body {
+    text-align: center;
+}
+
+.modal-body {
+    text-align: left !important;
+    overflow-y: auto;
+}
+
+.description-container {
+    text-align: left !important;
+    overflow-y: auto;
+}
+

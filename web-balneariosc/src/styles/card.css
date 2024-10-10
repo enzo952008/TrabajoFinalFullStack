@@ -109,3 +109,11 @@ img.modal-image-header {
   margin-right: 10px;
 }
 
+.btn-close {
+  filter: brightness(0) invert(1); /* Cambia el color del ícono a blanco */
+  opacity: 0.6;
+}
+
+.btn-close:hover {
+  opacity: 1;
+}

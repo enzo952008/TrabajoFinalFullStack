@@ -39,7 +39,7 @@ function CardLodging({ hospedaje }) {
               style={{ width: '100%', height: 'auto', borderRadius: '5px' }}
             />
             <div className="overlay"></div>
-            <Button variant="close" onClick={closeModal} className="close-button" />
+            <Button variant="close" onClick={closeModal} className="close-button"/>
             <h5 className="modal-title">{hospedaje.Nombre} </h5>
           </div>
           <Modal.Body className="modal-body-content">

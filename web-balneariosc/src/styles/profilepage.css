@@ -25,14 +25,14 @@
     
     color: white;
     text-align: center;
-    padding: 10px 0;
+    
 }
 
 .container-tickets {
     margin-top: 20px;
     width: 70%;
     margin-left: 30px;
-    /* background-color: #fff7d9; */
+     /* background-color: #fff7d9;  */
 }
 
 .tickets-table {

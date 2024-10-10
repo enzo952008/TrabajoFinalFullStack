@@ -46,6 +46,7 @@ const Profile = () => {
             <div className='footerProfile'>
             <Footer />
             </div>
+            
         </div>
     );
 };

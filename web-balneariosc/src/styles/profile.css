@@ -40,10 +40,7 @@
   position: relative; /* Necesario para que el botón se posicione correctamente */
 }
 
-.name {
-  margin: 0;            /* Elimina cualquier margen adicional del nombre */
-  font-size: 50px;       /* Tamaño de fuente ajustable según sea necesario */
-}
+
 
 .centered {
   display: flex;
@@ -142,7 +139,7 @@
 }
 
 
-.modal {
+.modal-profile {
   position: fixed;
   top: 0;
   left: 0;
@@ -154,7 +151,7 @@
   align-items: center;
 }
 
-.modal-content {
+.modal-content-profile {
   background-color: white;
   padding: 20px;
   border-radius: 8px;
@@ -162,37 +159,59 @@
   width: 100%;
 }
 
-.modal-content h2 {
+.modal-content-profile h2 {
   margin-top: 0;
 }
 
-.modal-content label {
+.modal-content-profile label {
   display: block;
   margin-top: 10px;
 }
 
-.modal-content input[type="text"],
-.modal-content input[type="file"] {
+.modal-content-profile input[type="text"],
+.modal-content-profile input[type="file"] {
   width: 100%;
   padding: 8px;
   margin-top: 5px;
 }
 
-.modal-content button {
-  margin-top: 10px;
+/* Contenedor de los botones */
+.modal-buttons-profile {
+  display: flex;
+  flex-direction: column; /* Alineación vertical */
+  gap: 10px; /* Espacio entre los botones */
+  margin-top: 20px;
+}
+
+/* Estilos del botón "Guardar" */
+.save-button-profile,
+.cancel-button-profile {
+  width: 100%; /* Ambos botones ocuparán el ancho completo del modal */
   padding: 10px;
-  background-color: #007bff;
-  color: white;
+  font-size: 16px;
   border: none;
   cursor: pointer;
 }
 
-.modal-content button:nth-child(3) {
-  background-color: #6c757d;
+/* Botón "Guardar" */
+.save-button-profile {
+  background-color: #007bff;
+  color: white;
 }
 
-.modal-content button:hover {
+.save-button-profile:hover {
   opacity: 0.9;
 }
 
+/* Botón "Cancelar" */
+.cancel-button-profile {
+  background-color: #f8f9fa !important; /* Fondo claro */
+  color: #6c757d !important;
+  border : none;
+  
+}
 
+.cancel-button-profile:hover {
+  background-color: #e2e6ea !important; /* Fondo más claro en hover */
+  opacity: 0.9 !important;
+}

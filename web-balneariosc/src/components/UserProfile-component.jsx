@@ -66,8 +66,8 @@ const UserProfile = () => {
       </div>
 
       {isModalOpen && (
-        <div className="modal">
-          <div className="modal-content">
+        <div className="modal-profile">
+          <div className="modal-content-profile">
             <h2>Editar Perfil</h2>
             <label>Nombre:</label>
             <input
@@ -88,9 +88,16 @@ const UserProfile = () => {
 
             <label>Cambiar Banner:</label>
             <input type="file" onChange={handleBannerChange} />
-
-            <button onClick={handleSave}>Guardar</button>
-            <button onClick={handleCloseModal}>Cancelar</button>
+          
+            <div className="modal-buttons-profile">
+              <button className="save-button-profile" onClick={handleSave}>
+                Guardar
+              </button>
+              <button className="cancel-button-profile" onClick={handleCloseModal}>
+                Cancelar
+              </button>
+            </div>
+          
           </div>
         </div>
       )}

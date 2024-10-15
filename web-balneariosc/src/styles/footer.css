@@ -12,7 +12,7 @@
   margin: 0;
   text-align: center;
   flex: 1; /* Permite que el texto ocupe el espacio disponible */
-  margin-left: 120px;
+  margin-left: 5%;
 }
 
 .footer-logos {
@@ -39,9 +39,16 @@
   }
 
   .footer-text {
+    font-size: clamp(10px, 4vw, 13px); /* Texto más pequeño para pantallas móviles */
     margin-bottom: 10px; /* Espaciado entre el texto y los logos en pantallas pequeñas */
+    margin-left: 0%;
   }
 
+  .footer-logos img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+  }
   .footer-logos a {
     margin: 5px;
   }

@@ -3,7 +3,7 @@
     text-align: left;
     width: 100%;
     padding: 20px 0;
-    background: rgba(255, 255, 255, 0.2); /* Más oscuro con menor opacidad */
+    background: rgba(255, 255, 255, 0.1); /* Más oscuro con menor opacidad */
 }
 
 .header h2 {
@@ -24,20 +24,35 @@
 }
 
 .ticket-booking {
-    text-align: center;
-    background-image: url('../home/atraccionesturisticas/imgAttractions/FondoTicket.png');
-    min-height: 100vh;
-    background-size: cover;
-    position: relative;
-  }
+  text-align: center;
+  background-image: url('../home/atraccionesturisticas/imgAttractions/FondoTicket.png');
+  min-height: 65vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+  .ticket-booking::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Capa negra con 50% de opacidad */
+    z-index: -1; /* Mantener el overlay detrás del contenido */
+}
   
   .content-container {
     padding-top: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 100%; /* Ocupa el ancho completo de la pantalla */
+    max-width: 100%;
     margin: 0 auto;
+    align-items: stretch; /* Asegura que los elementos hijos tengan la misma altura */
   }
   
   .dates-container {
@@ -86,17 +101,20 @@
     background-color: white;
     color: #568773;
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 20px;
     padding: 30px; /* Aumentado para tarjetas más grandes */
     margin: 10px;
-    width: 25%; /* Ocupa el 25% del ancho de la pantalla */
+    width: 20%; /* Ocupa el 25% del ancho de la pantalla */
+    height: auto;
     text-align: left;
-    font-size: 1.2em; /* Aumentar el tamaño de la fuente */
+    font-size: 1.3em; /* Aumentar el tamaño de la fuente */
   }
-  .tariff-table {
-    width: 100%; /* La tabla ocupa todo el ancho disponible del contenedor */
-    border-collapse: collapse; /* Colapsa bordes para un diseño más limpio */
-    
+  .compraTicket, .tariff-card {
+    flex: 1; /* Permite que ambas tarjetas crezcan igual en el ancho */
+    margin: 10px; /*Añade un margen alrededor de cada tarjeta */
+    display: flex;
+    flex-direction: column;
+  
   }
   
   .tariff-table td {
@@ -107,6 +125,34 @@
   }
   
   .tariff-table td:last-child {
+    text-align: right; /* Alinea el texto a la derecha en la segunda columna */
+  }
+
+  .compraTicket {
+    background-color: white;
+    color: #568773;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 30px; /* Aumentado para tarjetas más grandes */
+    margin-right: 10%;
+    width: 50%; /* Ocupa el 25% del ancho de la pantalla */
+    text-align: left;
+    font-size: 1.6em; /* Aumentar el tamaño de la fuente */
+  }
+  .compraTabla {
+    width: 100%; /* La tabla ocupa todo el ancho disponible del contenedor */
+    border-collapse: collapse; /* Colapsa bordes para un diseño más limpio */
+    
+  }
+  
+  .compraTabla td {
+    padding: 8px 12px; /* Espaciado dentro de las celdas */
+    border-bottom: 1px solid #ccc; /* Línea divisoria entre filas */
+    text-align: left; /* Alinea el texto a la izquierda en la primera columna */
+    background-color: white;
+  }
+  
+  .compraTabla td:last-child {
     text-align: right; /* Alinea el texto a la derecha en la segunda columna */
   }
   

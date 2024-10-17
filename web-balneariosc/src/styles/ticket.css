@@ -235,12 +235,12 @@ body {
 }
 /* Estilos para las cards de tickets */
 .cards-container {
+  width: 100%;
   background-color: white;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 20px;
-  padding: 0 10%;
 }
 
 .ticket-card {

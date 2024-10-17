@@ -1,15 +1,18 @@
+body {
+  background-color: white;
+}
 .header {
-    color: white;
-    text-align: left;
-    width: 100%;
-    padding: 20px 0;
-    background: rgba(255, 255, 255, 0.1); /* Más oscuro con menor opacidad */
+  color: white;
+  text-align: left;
+  width: 100%;
+  padding: 20px 0;
+  /* background: rgba(255, 255, 255, 0.1); Más oscuro con menor opacidad */
 }
 
 .header h2 {
-    text-align: left;
-    color: #568773;
-    font-size: 54px;
+  text-align: left;
+  color: #568773;
+  font-size: 54px;
 }
 
 .header h1 {
@@ -18,166 +21,294 @@
 }
 
 .header p {
-    margin-left: 50px !important ;
-    font-size: 35px;
-    margin: 5px 0 0;
+  margin-left: 50px !important;
+  font-size: 35px;
+  margin: 5px 0 0;
 }
 
 .ticket-booking {
   text-align: center;
-  background-image: url('../home/atraccionesturisticas/imgAttractions/FondoTicket.png');
-  min-height: 65vh;
+  min-height: 65vh; /* Ajusta esta altura según sea necesario */
   background-size: cover;
   background-position: center;
   position: relative;
   z-index: 1;
   overflow: hidden;
+  background-color: white;
 }
-
-  .ticket-booking::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Capa negra con 50% de opacidad */
-    z-index: -1; /* Mantener el overlay detrás del contenido */
-}
-  
-  .content-container {
-    padding-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 100%;
-    margin: 0 auto;
-    align-items: stretch; /* Asegura que los elementos hijos tengan la misma altura */
-  }
-  
-  .dates-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 70%; /* Ocupa el 70% del ancho de la pantalla */
-  }
-  
-  .date-card {
-    color: white;
-    background-color: #568773;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 30px; /* Aumentado para tarjetas más grandes */
-    margin: 10px;
-    width: calc(33.33% - 20px); /* Tres tarjetas por fila con márgenes ajustados */
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-    font-size: 1.2em; /* Aumentar el tamaño de la fuente */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .date-card:hover {
-    background-color: #e0e0e0;
-    transform: scale(1.05);
-  }
-  
-  .date-card.selected {
-    background-color: #4caf50;
-    color: white;
-  }
-  
-  .buy-ticket-button {
-    background-color: white !important;
-    color: #568773 !important ;
-    margin-top: 20px; /* Espacio entre el texto y el botón */
-    padding: 5px 10px; /* Reducir el tamaño del botón */
-    font-size: 0.9em; /* Reducir el tamaño de la fuente del botón */
-    align-self: center; /* Centrar el botón */
-  }
-  
-  .tariff-card {
-    background-color: white;
-    color: #568773;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    padding: 30px; /* Aumentado para tarjetas más grandes */
-    margin: 10px;
-    width: 20%; /* Ocupa el 25% del ancho de la pantalla */
-    height: auto;
-    text-align: left;
-    font-size: 1.3em; /* Aumentar el tamaño de la fuente */
-  }
-  .compraTicket, .tariff-card {
-    flex: 1; /* Permite que ambas tarjetas crezcan igual en el ancho */
-    margin: 10px; /*Añade un margen alrededor de cada tarjeta */
-    display: flex;
-    flex-direction: column;
-  
-  }
-  
-  .tariff-table td {
-    padding: 8px 12px; /* Espaciado dentro de las celdas */
-    border-bottom: 1px solid #ccc; /* Línea divisoria entre filas */
-    text-align: left; /* Alinea el texto a la izquierda en la primera columna */
-    background-color: white;
-  }
-  
-  .tariff-table td:last-child {
-    text-align: right; /* Alinea el texto a la derecha en la segunda columna */
-  }
-
-  .compraTicket {
-    background-color: white;
-    color: #568773;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    padding: 30px; /* Aumentado para tarjetas más grandes */
-    margin-right: 10%;
-    width: 50%; /* Ocupa el 25% del ancho de la pantalla */
-    text-align: left;
-    font-size: 1.6em; /* Aumentar el tamaño de la fuente */
-  }
-  .compraTabla {
-    width: 100%; /* La tabla ocupa todo el ancho disponible del contenedor */
-    border-collapse: collapse; /* Colapsa bordes para un diseño más limpio */
+.ticket-selection-title {
+  padding-top:20px ;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  color: #004500;
+  font-size: 3.5em;
+  font-family: 'Kaushan Script', cursive;
     
+}
+
+.ticket-booking::before {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Capa negra con 50% de opacidad */
+  z-index: -1; /* Mantener el overlay detrás del contenido */
+}
+
+.content-container {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  margin: 0 auto;
+  align-items: stretch; /* Asegura que los elementos hijos tengan la misma altura */
+  margin-bottom: 50px; /* Espacio para separar las tablas de la imagen de fondo */
+}
+
+.dates-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 70%; /* Ocupa el 70% del ancho de la pantalla */
+}
+
+.date-card {
+  color: white;
+  background-color: #568773;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 30px; /* Aumentado para tarjetas más grandes */
+  margin: 10px;
+  width: calc(33.33% - 20px); /* Tres tarjetas por fila con márgenes ajustados */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-size: 1.2em; /* Aumentar el tamaño de la fuente */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.date-card:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
+}
+
+.date-card.selected {
+  background-color: #4caf50;
+  color: white;
+}
+
+
+
+.tariff-card {
+  background-color: white;
+  color: #568773;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 30px; /* Aumentado para tarjetas más grandes */
+  margin: 10px;
+  width: 20%; /* Ocupa el 25% del ancho de la pantalla */
+  height: auto;
+  text-align: left;
+  font-size: 1.3em; /* Aumentar el tamaño de la fuente */
+}
+
+/* Contenedor que envuelve tariff-card y compraTicket con la imagen de fondo */
+.background-section {
+  background-image: url('../home/atraccionesturisticas/imgAttractions/FondoTicket.png');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.background-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay con opacidad */
+  z-index: -1;
+}
+
+/* Ajustes de estilos para .compraTicket y .tariff-card */
+.compraTicket, .tariff-card {
+  border-radius: 20px;
+  margin: 10px;
+}
+
+
+.tariff-table td {
+  padding: 8px 12px; /* Espaciado dentro de las celdas */
+  border-bottom: 1px solid #ccc; /* Línea divisoria entre filas */
+  text-align: left; /* Alinea el texto a la izquierda en la primera columna */
+  background-color: white;
+}
+
+.tariff-table td:last-child {
+  text-align: right; /* Alinea el texto a la derecha en la segunda columna */
+}
+
+.compraTicket {
+  background-color: white;
+  color: #568773;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 30px; /* Aumentado para tarjetas más grandes */
+  margin-right: 10%;
+  width: 50%; /* Ocupa el 25% del ancho de la pantalla */
+  text-align: left;
+  font-size: 1.6em; /* Aumentar el tamaño de la fuente */
+}
+
+.compraTabla {
+  width: 100%; /* La tabla ocupa todo el ancho disponible del contenedor */
+  border-collapse: collapse; /* Colapsa bordes para un diseño más limpio */
+}
+
+.buy-ticket-button {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buy-ticket-button:hover {
+  background-color: #4caf50;
+}
+
+.compraTabla td {
+  padding: 8px 12px; /* Espaciado dentro de las celdas */
+  border-bottom: 1px solid #ccc; /* Línea divisoria entre filas */
+  text-align: left; /* Alinea el texto a la izquierda en la primera columna */
+  background-color: white;
+}
+
+.compraTabla td:last-child {
+  text-align: right; /* Alinea el texto a la derecha en la segunda columna */
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Asegura que el modal se superponga a todo */
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .dates-container {
+    width: 100%; /* Ocupa el ancho completo en pantallas medianas */
   }
-  
-  .compraTabla td {
-    padding: 8px 12px; /* Espaciado dentro de las celdas */
-    border-bottom: 1px solid #ccc; /* Línea divisoria entre filas */
-    text-align: left; /* Alinea el texto a la izquierda en la primera columna */
-    background-color: white;
+
+  .tariff-card {
+    width: 100%; /* Tarjeta de tarifas ocupa todo el ancho en pantallas medianas */
+    margin-top: 20px; /* Añadir espacio encima de la tarjeta de tarifas */
   }
-  
-  .compraTabla td:last-child {
-    text-align: right; /* Alinea el texto a la derecha en la segunda columna */
+}
+/* Estilos para las cards de tickets */
+.cards-container {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0 10%;
+}
+
+.ticket-card {
+  padding-top: 40px;
+  background-color: #568773;
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px; /* Aumentar el margen a 20px */
+  width: calc(16.66% - 40px); /* Ajustar el ancho para mantener seis tarjetas por fila */
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.ticket-image {
+  width: 100px; /* Ajusta el tamaño según sea necesario */
+  height: auto;
+  margin-bottom: 15px; /* Espacio entre la imagen y el botón */
+}
+
+
+.ticket-card h3 {
+  margin-bottom: 10px;
+}
+
+.ticket-card:hover {
+  transform: scale(1.05);
+}
+
+/* Responsivo para pantallas medianas */
+@media (max-width: 1200px) {
+  .ticket-card {
+    width: calc(33.33% - 20px); /* Tres cards por fila en pantallas medianas */
   }
-  
-  /* Responsive design */
-  @media (max-width: 1200px) {
-    .dates-container {
-      width: 100%; /* Ocupa el ancho completo en pantallas medianas */
-    }
-  
-    .tariff-card {
-      width: 100%; /* Tarjeta de tarifas ocupa todo el ancho en pantallas medianas */
-      margin-top: 20px; /* Añadir espacio encima de la tarjeta de tarifas */
-    }
+}
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+  .ticket-card {
+    width: calc(50% - 20px); /* Dos cards por fila en pantallas pequeñas */
   }
-  
-  @media (max-width: 768px) {
-    .date-card {
-      width: calc(50% - 20px); /* Dos tarjetas por fila en pantallas medianas */
-    }
+}
+
+/* Responsivo para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .ticket-card {
+    width: calc(100% - 20px); /* Una card por fila en pantallas muy pequeñas */
   }
-  
-  @media (max-width: 480px) {
-    .date-card {
-      width: calc(100% - 20px); /* Una tarjeta por fila en pantallas pequeñas */
-    }
+}
+
+
+@media (max-width: 768px) {
+  .date-card {
+    width: calc(50% - 20px); /* Dos tarjetas por fila en pantallas medianas */
   }
+}
+
+@media (max-width: 480px) {
+  .date-card {
+    width: calc(100% - 20px); /* Una tarjeta por fila en pantallas pequeñas */
+  }
+}
+
   
   

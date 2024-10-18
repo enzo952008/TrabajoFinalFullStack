@@ -100,7 +100,7 @@ const TicketBooking = () => {
           {dates.map((date, index) => (
             <div className="ticket-card" key={index}>
               <h2>Compra tu ticket</h2>
-              <p>{formatShortDate(date)}</p>
+              <h3>{formatShortDate(date)}</h3>
               <img 
                 src="/static/media/tickets.ec77a841237a2b5bc437.png" 
                 alt="Imagen del ticket" 

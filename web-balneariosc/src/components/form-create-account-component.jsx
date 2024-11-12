@@ -7,15 +7,37 @@ const FormCreateAccount = () => {
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
 
-    const handleRegister = (e) => {
+    const handleRegister = async (e) => { // Agregué 'async' aquí
         e.preventDefault();
+    
         if (password !== confirmPassword) {
             alert("Las contraseñas no coinciden");
             return;
         }
-        console.log("Nombre:", name);
-        console.log("Correo electrónico:", email);
-        console.log("Contraseña:", password);
+    
+        try {
+            const response = await fetch('http://localhost:3000/users', { // Cambia la URL si es necesario
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({  name, password, email }), // Enviar credenciales
+            });
+    
+            if (!response.ok) {
+                throw new Error('Login failed');
+            }
+    
+            const data = await response.json();
+            // Guardar el token o manejar la respuesta de éxito
+            console.log('Login successful:', data);
+    
+            // Puedes redirigir al usuario después de un login exitoso
+            // Ejemplo: navigate('/perfil');
+    
+        } catch (error) {
+            console.error('Error during login:', error);
+        }
     };
 
 
